@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "data": "05.04.2018",
+      "title": "zakupy",
+      "description": "warzywa, owoce, mleko"
+    },
+    {
+        "id": 2,
+        "data": "05.04.2018",
+        "title": "zrobić projekt",
+        "description": "napisać css"
+    },
+    {
+        "id": 3,
+        "data": "06.04.2018",
+        "title": "wiosenne porządki",
+        "description": "przegląd ciuchów"
+    },
+    {
+        "id": 4,
+        "data": "07.04.2018",
+        "title": "kupić bilety do kina",
+        "description": "brak"
+    }
+  ]
+}
