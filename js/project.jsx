@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { List } from './list.jsx';
+import { ToModify } from './ToModify.jsx';
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
 
-    class Box extends React.Component{
-        render(){
-            return <div>Hello</div>
-        }
-    }
-
-
-    class App extends React.Component{
-        render(){
-            return <Box />
+    class App extends React.Component {
+        render() {
+            return (
+                <div>
+                    <List />
+                    <ToModify />
+                </div>
+            )
         }
     }
 

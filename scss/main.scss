@@ -1,0 +1,23 @@
+.bigBox {
+    width: 400px;
+    height: 450px;
+    border: 1px solid grey;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.smallBoxes {
+    width: 80px;
+    height: 80px;
+    background-color: cyan;
+    flex-grow: 1;
+    margin: 10px 5px;
+    display: block;
+}
+
+.showPicture {
+    display: none;
+}

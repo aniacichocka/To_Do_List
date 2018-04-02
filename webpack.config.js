@@ -3,6 +3,11 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: ["./js/project.jsx", "./scss/main.scss"],
     output: { filename: "./js/out.js" },
+    devServer: {
+        inline: true,
+        contentBase: './',
+        port: 3001
+    },
     watch: true,
     module: {
         loaders: [ {
