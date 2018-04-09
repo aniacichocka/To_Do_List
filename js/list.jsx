@@ -1,5 +1,6 @@
 import React from 'react';
 import { ListItem } from './listItem.jsx';
+import { ListItemDelete } from './listItemDelete.jsx';
 import { AddItem } from './addItem.jsx';
 import { Menu } from './menu.jsx';
 
@@ -8,9 +9,11 @@ class List extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            mainData: []
+            mainData: [],
+            deleteData: []
         }
         this.postItem = this.postItem.bind(this);
+        this.deleteItem = this.deleteItem.bind(this);
 
     }
 
@@ -40,15 +43,12 @@ class List extends React.Component {
     postItem (date, title, description) {
 
         const newItem = {
-            id: `${this.state.mainData.length + 1}`,
             date: date,
             title: title,
             description: description
         }
 
-        if (newItem === {} || this.state.mainData.id === newItem.id){
-            return null
-        } else{
+
             fetch('http://localhost:3000/tasks/', {
                 method: 'POST',
                 body: JSON.stringify(newItem),
@@ -61,60 +61,73 @@ class List extends React.Component {
                 return resp.json();
             })
             .then(data=> {
+                let newData = this.state.mainData;
+                newItem.id = data.id;
+                newData.push(newItem);
                 this.setState({
-                    mainData: data
-                },this.getData())
+                    mainData: newData
+                })
             })
             .catch(err => {
                 console.log('Błąd!', err);
             });
-        }
+
     }
 
-    // putItem (date, title, description) {
-    //
-    //     const newItem = {
-    //         id: `${this.state.mainData.length + 1}`,
-    //         date: date,
-    //         title: title,
-    //         description: description
-    //     }
-    //
-    //     if (newItem === {} || this.state.mainData.id === newItem.id){
-    //         return null
-    //     } else{
-    //         fetch('http://localhost:3000/tasks/', {
-    //             method: 'PUT',
-    //             body: JSON.stringify(newItem),
-    //             headers: new Headers({
-    //                 'Content-Type': 'application/json'
-    //             })
-    //         })
-    //         .then(resp => {
-    //             console.log(resp);
-    //             return resp.json();
-    //         })
-    //         .then(data=> {
-    //             this.setState({
-    //                 mainData: data
-    //             },this.getData())
-    //         })
-    //         .catch(err => {
-    //             console.log('Błąd!', err);
-    //         });
-    //     }
-    // }
+    deleteItem (item) {
+        console.log(item);
+
+        fetch('http://localhost:3000/tasks/' + item.id, {
+            method: 'DELETE',
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            })
+        })
+        .then(resp => {
+            console.log(resp);
+            return resp.json();
+        })
+        .then(data => {
+
+            let newData = this.state.mainData;
+            newData = newData.filter((el, index) => {
+                return el.id !== item.id
+            })
+
+            console.log(newData);
+            this.setState({
+                mainData: newData
+            })
+        })
+        .catch(err => {
+            console.log('Błąd!', err);
+        });
+
+        let newDeleteData = this.state.deleteData;
+        newDeleteData.push(item);
+        this.setState({
+            deleteData: newDeleteData
+        })
+    }
 
     render() {
         let list = this.state.mainData.map(el => {
-            return <ListItem item = {el} />
+            return <ListItem item = {el} delete = {this.deleteItem} data = {this.state.mainData}/>
         })
+
+        let list2 = this.state.deleteData.map(el => {
+            return <ListItemDelete item = {el}/>
+        })
+
         return (
             <div>
                 <Menu />
                 <AddItem post = {this.postItem}/>
                 <ul>
                     {list}
+                </ul>
+                <ul>
+                    {list2}
                 </ul>
             </div>
         )

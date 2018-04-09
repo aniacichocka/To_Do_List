@@ -6,7 +6,8 @@ class ToModify extends React.Component {
         this.state = {
             modDate: '',
             modTitle: '',
-            modDescription: ''
+            modDescription: '',
+            changeDataArr: this.props.data
         }
     }
 
@@ -28,10 +29,41 @@ class ToModify extends React.Component {
         })
     }
 
-    handleClickMod = () => {
-        if (typeof this.props.post === 'function') {
-            this.props.post(this.state.newDate, this.state.newTitle, this.state.newDescription);
-        }
+    handleClickMod = (e) => {
+
+            const changeItem = {
+                date: this.modDate,
+                title: this.modTitle,
+                description: this.modDescription
+            }
+
+                fetch('http://localhost:3000/tasks/' + this.param.id, {
+                    method: 'PUT',
+                    body: JSON.stringify(changeItem),
+                    headers: new Headers({
+                        'Content-Type': 'application/json'
+                    })
+                })
+                .then(resp => {
+                    console.log(resp);
+                    return resp.json();
+                })
+                .then(data=> {
+
+                    let changeData = this.state.changeDataArr;
+                    changeData = changeData.filter((el, index) => {
+                        return el.id !== this.param.id
+                    })
+                    changeData.push(changeItem);
+
+                    this.setState({
+                        changeDataArr: changeData
+                    })
+                })
+                .catch(err => {
+                    console.log('Błąd!', err);
+                });
+
         this.setState({
             modDate: '',
             modTitle: '',
@@ -45,7 +77,7 @@ class ToModify extends React.Component {
                 <span>Date: </span><input value = {this.state.modDate} onChange = {this.handleModDate}></input>
                 <span>Title: </span><input value = {this.state.modTitle} onChange = {this.handleModTitle}></input>
                 <span>Description: </span><textarea maxLength = '160' cols = '25' rows = '10' value = {this.state.modDescription} onChange = {this.handleModDescription}></textarea>
-                <button onClick = {this.handleClickMod}>Add</button>
+                <button onClick = {e => this.handleClickMod(e)}>Add</button>
             </div>
         )
     }

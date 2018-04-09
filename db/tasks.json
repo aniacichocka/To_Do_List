@@ -2,45 +2,39 @@
   "tasks": [
     {
       "id": 1,
-      "date": "1/4/2018",
+      "date": "05.04.2018",
       "title": "zakupy",
       "description": "warzywa, owoce, mleko"
     },
     {
       "id": 2,
-      "date": "1/4/2018",
+      "date": "05.04.2018",
       "title": "zrobić projekt",
       "description": "napisać css"
     },
     {
       "id": 3,
-      "date": "1/4/2018",
+      "date": "06.04.2018",
       "title": "wiosenne porządki",
       "description": "przegląd ciuchów"
     },
     {
-      "id": 4,
-      "date": "1/4/2018",
-      "title": "kupić bilety do kina",
-      "description": "brak"
+      "date": "fef",
+      "title": "fefef",
+      "description": "efefef",
+      "id": 4
     },
     {
-      "id": "5",
-      "date": "hyh",
-      "title": "hyh",
-      "description": "hy"
+      "date": "fef",
+      "title": "f",
+      "description": "",
+      "id": 5
     },
     {
-      "id": "6",
-      "date": "",
-      "title": "",
-      "description": ""
-    },
-    {
-      "id": "7",
-      "date": "gtg",
-      "title": "gtg",
-      "description": "gt"
+      "date": "fwfa",
+      "title": "fafae",
+      "description": "fddsf",
+      "id": 6
     }
   ]
 }
