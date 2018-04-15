@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 class ListItem extends React.Component {
     constructor(props) {
@@ -15,32 +14,40 @@ class ListItem extends React.Component {
         })
     }
 
-    handleClickHide = () =>{
+    handleClickHide = () => {
         this.setState({
             show: false
         })
     }
 
-    hadleClickCompleted = (e, item) =>{
+    hadleClickCompleted = (e, item) => {
         if (typeof this.props.delete === 'function') {
             this.props.delete(item);
         }
+        this.setState({
+            show: false
+        })
     }
 
+    hadleClickModify = (e, item) => {
+        if (typeof this.props.modify === 'function') {
+            this.props.modify(item);
+        }
+    }
 
     render() {
         return (
-            <li key={this.props.item.id}>
-                <span onClick = {this.handleClickTitle}>{this.props.item.date} {this.props.item.title}</span>
+            <div key={this.props.item.id}>
+                <div onClick = {this.handleClickTitle}><span>{this.props.item.date}</span><span> {this.props.item.title}</span></div>
                 <div>{this.state.show && <div>
-                    <span>{this.props.item.description}</span>
+                    <p>{this.props.item.description}</p>
                     <div>
-                        <Link to={`/toModify/${this.props.item.id}`} data = {this.props.data}>modify</Link>
+                        <button onClick = {e => this.hadleClickModify(e, this.props.item)}>to modify</button>
                         <button onClick = {e => this.hadleClickCompleted(e, this.props.item)}>completed</button>
                         <button onClick = {this.handleClickHide}>hide</button>
                     </div>
                 </div>}</div>
-            </li>
+            </div>
         )
     }
 }

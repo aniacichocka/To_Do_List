@@ -55,15 +55,16 @@ module.exports = {
             use: [
                 'style-loader',
                 'css-loader',
-                'sass-loader',
                     {
                         loader: 'postcss-loader',
                         options: {
                             plugins: () => [
+                                require('precss'),
                                 new require('autoprefixer')()
                             ]
                         }
-                    }
+                    },
+                'sass-loader'
                 ]
             }
         ]

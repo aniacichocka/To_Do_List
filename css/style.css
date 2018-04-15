@@ -1,20 +1,24 @@
-.bigBox {
-  width: 400px;
-  height: 450px;
-  border: 1px solid grey;
-  background-color: grey;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
+.main-form {
+    background-color: #aacabb
+}
 
-.smallBoxes {
-  width: 80px;
-  height: 80px;
-  background-color: cyan;
-  flex-grow: 1;
-  margin: 10px 5px;
-  display: block; }
+.lists {
+    background-color: pink;
+}
 
-.showPicture {
-  display: none; }
+.to-do-list {
+    background-color: #d4d1d8;
+    border: 1px solid #a29fa6;
+    height: 20rem;
+}
+
+.completed-tasks {
+    background-color: #d4d1d8;
+    border: 1px solid #a29fa6;
+    height: 20rem
+}
+
+h4 {
+    text-align: center;
+    background-color: white;
+}

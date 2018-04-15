@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Menu } from './menu.jsx';
+// import { Menu } from './menu.jsx';
 import { Template } from './template.jsx';
 import { List } from './list.jsx';
-import { ToModify } from './ToModify.jsx';
 import { Router,
 Route,
 Link,
@@ -11,6 +10,8 @@ IndexLink,
 IndexRoute,
 hashHistory
 } from 'react-router';
+// import 'bootstrap';
+
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -19,9 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return (
                 <Router history={hashHistory}>
                     <Route path='/' component={Template}>
-                        <IndexRoute component={Menu} />
+                        <IndexRoute component={List} />
                         <Route path='list' component={List}/>
-                        <Route path='toModify/:id' component={ToModify}/>
                     </Route>
                 </Router>
             )

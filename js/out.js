@@ -101,153 +101,6 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./js/ToModify.jsx":
-/*!*************************!*\
-  !*** ./js/ToModify.jsx ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.ToModify = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ToModify = function (_React$Component) {
-    _inherits(ToModify, _React$Component);
-
-    function ToModify(props) {
-        _classCallCheck(this, ToModify);
-
-        var _this = _possibleConstructorReturn(this, (ToModify.__proto__ || Object.getPrototypeOf(ToModify)).call(this, props));
-
-        _this.handleModDate = function (event) {
-            _this.setState({
-                modDate: event.target.value
-            });
-        };
-
-        _this.handleModTitle = function (event) {
-            _this.setState({
-                modTitle: event.target.value
-            });
-        };
-
-        _this.handleModDescription = function (event) {
-            _this.setState({
-                modDescription: event.target.value
-            });
-        };
-
-        _this.handleClickMod = function (e) {
-
-            var changeItem = {
-                date: _this.modDate,
-                title: _this.modTitle,
-                description: _this.modDescription
-            };
-
-            fetch('http://localhost:3000/tasks/' + _this.param.id, {
-                method: 'PUT',
-                body: JSON.stringify(changeItem),
-                headers: new Headers({
-                    'Content-Type': 'application/json'
-                })
-            }).then(function (resp) {
-                console.log(resp);
-                return resp.json();
-            }).then(function (data) {
-
-                var changeData = _this.state.mainData;
-                changeData = changeData.filter(function (el, index) {
-                    return el.id !== _this.param.id;
-                });
-                changeData.push(changeItem);
-
-                _this.setState({
-                    changeDataArr: changeData
-                });
-            }).catch(function (err) {
-                console.log('Błąd!', err);
-            });
-
-            _this.setState({
-                modDate: '',
-                modTitle: '',
-                modDescription: ''
-            });
-        };
-
-        _this.state = {
-            modDate: '',
-            modTitle: '',
-            modDescription: '',
-            changeDataArr: _this.props.data
-        };
-        return _this;
-    }
-
-    _createClass(ToModify, [{
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
-
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'span',
-                    null,
-                    'Date: '
-                ),
-                _react2.default.createElement('input', { value: this.state.modDate, onChange: this.handleModDate }),
-                _react2.default.createElement(
-                    'span',
-                    null,
-                    'Title: '
-                ),
-                _react2.default.createElement('input', { value: this.state.modTitle, onChange: this.handleModTitle }),
-                _react2.default.createElement(
-                    'span',
-                    null,
-                    'Description: '
-                ),
-                _react2.default.createElement('textarea', { maxLength: '160', cols: '25', rows: '10', value: this.state.modDescription, onChange: this.handleModDescription }),
-                _react2.default.createElement(
-                    'button',
-                    { onClick: function onClick(e) {
-                            return _this2.handleClickMod(e);
-                        } },
-                    'Add'
-                )
-            );
-        }
-    }]);
-
-    return ToModify;
-}(_react2.default.Component);
-
-exports.ToModify = ToModify;
-
-/***/ }),
-
 /***/ "./js/addItem.jsx":
 /*!************************!*\
   !*** ./js/addItem.jsx ***!
@@ -326,30 +179,54 @@ var AddItem = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                null,
+                'form',
+                { className: 'row' },
                 _react2.default.createElement(
-                    'span',
-                    null,
-                    'Date: '
+                    'div',
+                    { className: 'input-group row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'input-group-prepend col-12' },
+                        _react2.default.createElement(
+                            'label',
+                            { 'for': 'date', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
+                            'Date: '
+                        ),
+                        _react2.default.createElement('input', { id: 'date', className: 'form-control col-10 col-sm-9 mr-2 mb-2', value: this.state.newDate, onChange: this.handleChangeDate })
+                    )
                 ),
-                _react2.default.createElement('input', { value: this.state.newDate, onChange: this.handleChangeDate }),
                 _react2.default.createElement(
-                    'span',
-                    null,
-                    'Title: '
+                    'div',
+                    { className: 'input-group row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'input-group-prepend col-12' },
+                        _react2.default.createElement(
+                            'label',
+                            { 'for': 'title', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
+                            'Title: '
+                        ),
+                        _react2.default.createElement('input', { id: 'title', className: 'form-control col-10 col-sm-9 mr-2 mb-2', value: this.state.newTitle, onChange: this.handleChangeTitle })
+                    )
                 ),
-                _react2.default.createElement('input', { value: this.state.newTitle, onChange: this.handleChangeTitle }),
                 _react2.default.createElement(
-                    'span',
-                    null,
-                    'Description: '
-                ),
-                _react2.default.createElement('textarea', { maxLength: '160', cols: '25', rows: '10', value: this.state.newDescription, onChange: this.handleChangeDescription }),
-                _react2.default.createElement(
-                    'button',
-                    { onClick: this.handleClick },
-                    'Add'
+                    'div',
+                    { className: 'input-group row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'input-group-prepend col-12' },
+                        _react2.default.createElement(
+                            'label',
+                            { 'for': 'description', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
+                            'Description: '
+                        ),
+                        _react2.default.createElement('textarea', { id: 'description', className: 'form-control col-9 col-sm-7 mr-2 mb-2', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription, onChange: this.handleChangeDescription }),
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'btn btn-outline-secondary  col-1 col-sm-2 mr-2 mb-2', type: 'button', onClick: this.handleClick },
+                            'Add'
+                        )
+                    )
                 )
             );
         }
@@ -389,8 +266,6 @@ var _listItemDelete = __webpack_require__(/*! ./listItemDelete.jsx */ "./js/list
 
 var _addItem = __webpack_require__(/*! ./addItem.jsx */ "./js/addItem.jsx");
 
-var _menu = __webpack_require__(/*! ./menu.jsx */ "./js/menu.jsx");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -398,6 +273,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// import { Menu } from './menu.jsx';
+
 
 var List = function (_React$Component) {
     _inherits(List, _React$Component);
@@ -407,12 +285,54 @@ var List = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).call(this, props));
 
+        _this.handleClickMod = function () {
+            var inputDate = document.querySelector('.input-date').value;
+            var inputTitle = document.querySelector('.input-title').value;
+            var inputDescr = document.querySelector('.input-descr').value;
+
+            var changeItem = {
+                date: inputDate,
+                title: inputTitle,
+                description: inputDescr
+            };
+            console.log(_this.thisItem);
+            // fetch('http://localhost:3000/tasks/' + this.thisItem.id, {
+            //     method: 'PUT',
+            //     body: JSON.stringify(changeItem),
+            //     headers: new Headers({
+            //         'Content-Type': 'application/json'
+            //     })
+            // })
+            // .then(resp => {
+            //     console.log(resp);
+            //     return resp.json();
+            // })
+            // .then(data=> {
+            //     console.log(data);
+            //     // let changeData = this.state.changeDataArr;
+            //     // changeData = changeData.filter((el, index) => {
+            //     //     return el.id !== this.param.id
+            //     // })
+            //     // changeData.push(changeItem);
+            //     //
+            //     // this.setState({
+            //     //     changeDataArr: changeData
+            //     // })
+            // })
+            // .catch(err => {
+            //     console.log('Błąd!', err);
+            // });
+        };
+
         _this.state = {
             mainData: [],
-            deleteData: []
+            deleteData: [],
+            modifyArea: false,
+            thisItem: {}
         };
         _this.postItem = _this.postItem.bind(_this);
         _this.deleteItem = _this.deleteItem.bind(_this);
+        _this.modifyItem = _this.modifyItem.bind(_this);
 
         return _this;
     }
@@ -510,12 +430,32 @@ var List = function (_React$Component) {
             });
         }
     }, {
+        key: 'modifyItem',
+        value: function modifyItem(item) {
+
+            setTimeout(function () {
+                var inputDate = document.querySelector('.input-date');
+                var inputTitle = document.querySelector('.input-title');
+                var inputDescr = document.querySelector('.input-descr');
+
+                inputDate.value = item.date;
+                inputTitle.value = item.title;
+                inputDescr.value = item.description;
+            }, 200);
+
+            var itemChange = item;
+            this.setState({
+                modifyArea: true,
+                thisItem: itemChange
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this5 = this;
 
             var list = this.state.mainData.map(function (el) {
-                return _react2.default.createElement(_listItem.ListItem, { item: el, 'delete': _this5.deleteItem, data: _this5.state.mainData });
+                return _react2.default.createElement(_listItem.ListItem, { item: el, 'delete': _this5.deleteItem, modify: _this5.modifyItem });
             });
 
             var list2 = this.state.deleteData.map(function (el) {
@@ -524,18 +464,104 @@ var List = function (_React$Component) {
 
             return _react2.default.createElement(
                 'div',
-                null,
-                _react2.default.createElement(_menu.Menu, null),
-                _react2.default.createElement(_addItem.AddItem, { post: this.postItem }),
+                { className: 'container' },
                 _react2.default.createElement(
-                    'ul',
-                    null,
-                    list
+                    'div',
+                    { className: 'mainForm' },
+                    _react2.default.createElement(_addItem.AddItem, { post: this.postItem })
                 ),
                 _react2.default.createElement(
-                    'ul',
-                    null,
-                    list2
+                    'div',
+                    { className: 'lists' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-6 to-do-list' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                'To do list'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                null,
+                                list
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-6 completed-tasks' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                'Completed tasks'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                null,
+                                list2
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'input-group' },
+                    this.state.modifyArea && _react2.default.createElement(
+                        'form',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'input-group row' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'input-group-prepend col-12' },
+                                _react2.default.createElement(
+                                    'label',
+                                    { 'for': 'date', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
+                                    'Date: '
+                                ),
+                                _react2.default.createElement('input', { id: 'date', className: 'form-control col-10 col-sm-9 mr-2 mb-2 input-date', value: this.state.modDate, onChange: this.handleModDate })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'input-group row' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'input-group-prepend col-12' },
+                                _react2.default.createElement(
+                                    'label',
+                                    { 'for': 'title', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
+                                    'Title: '
+                                ),
+                                _react2.default.createElement('input', { id: 'title', className: 'form-control col-10 col-sm-9 mr-2 mb-2 input-title', value: this.state.modTitle, onChange: this.handleModTitle })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'input-group row' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'input-group-prepend col-12' },
+                                _react2.default.createElement(
+                                    'label',
+                                    { 'for': 'description', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
+                                    'Description: '
+                                ),
+                                _react2.default.createElement('textarea', { id: 'description', className: 'form-control col-9 col-sm-7 mr-2 mb-2 input-descr', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription, onChange: this.handleChangeDescription }),
+                                _react2.default.createElement(
+                                    'button',
+                                    { className: 'btn btn-outline-secondary col-1 col-sm-2 mr-2 mb-2', type: 'button', onClick: function onClick(e) {
+                                            return handleClickMod(e);
+                                        } },
+                                    'Modify'
+                                )
+                            )
+                        )
+                    )
                 )
             );
         }
@@ -545,6 +571,8 @@ var List = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.List = List;
+
+// data-id = item-id; -> przypisać do inputa
 
 /***/ }),
 
@@ -568,8 +596,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(/*! react-router */ "./node_modules/react-router/es/index.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -603,6 +629,15 @@ var ListItem = function (_React$Component) {
             if (typeof _this.props.delete === 'function') {
                 _this.props.delete(item);
             }
+            _this.setState({
+                show: false
+            });
+        };
+
+        _this.hadleClickModify = function (e, item) {
+            if (typeof _this.props.modify === 'function') {
+                _this.props.modify(item);
+            }
         };
 
         _this.state = {
@@ -617,14 +652,22 @@ var ListItem = function (_React$Component) {
             var _this2 = this;
 
             return _react2.default.createElement(
-                'li',
+                'div',
                 { key: this.props.item.id },
                 _react2.default.createElement(
-                    'span',
+                    'div',
                     { onClick: this.handleClickTitle },
-                    this.props.item.date,
-                    ' ',
-                    this.props.item.title
+                    _react2.default.createElement(
+                        'span',
+                        null,
+                        this.props.item.date
+                    ),
+                    _react2.default.createElement(
+                        'span',
+                        null,
+                        ' ',
+                        this.props.item.title
+                    )
                 ),
                 _react2.default.createElement(
                     'div',
@@ -633,7 +676,7 @@ var ListItem = function (_React$Component) {
                         'div',
                         null,
                         _react2.default.createElement(
-                            'span',
+                            'p',
                             null,
                             this.props.item.description
                         ),
@@ -641,9 +684,11 @@ var ListItem = function (_React$Component) {
                             'div',
                             null,
                             _react2.default.createElement(
-                                _reactRouter.Link,
-                                { to: '/toModify/' + this.props.item.id, data: this.props.data },
-                                'modify'
+                                'button',
+                                { onClick: function onClick(e) {
+                                        return _this2.hadleClickModify(e, _this2.props.item);
+                                    } },
+                                'to modify'
                             ),
                             _react2.default.createElement(
                                 'button',
@@ -713,7 +758,7 @@ var ListItemDelete = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'li',
+                'div',
                 { key: this.props.item.id },
                 _react2.default.createElement(
                     'span',
@@ -728,79 +773,6 @@ var ListItemDelete = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.ListItemDelete = ListItemDelete;
-
-/***/ }),
-
-/***/ "./js/menu.jsx":
-/*!*********************!*\
-  !*** ./js/menu.jsx ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Menu = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Menu = function (_React$Component) {
-    _inherits(Menu, _React$Component);
-
-    function Menu() {
-        _classCallCheck(this, Menu);
-
-        return _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).apply(this, arguments));
-    }
-
-    _createClass(Menu, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'span',
-                        null,
-                        'Tasks in all stages'
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'span',
-                        null,
-                        'Completed tasks'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Menu;
-}(_react2.default.Component);
-
-exports.Menu = Menu;
 
 /***/ }),
 
@@ -824,13 +796,9 @@ var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/i
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _menu = __webpack_require__(/*! ./menu.jsx */ "./js/menu.jsx");
-
 var _template = __webpack_require__(/*! ./template.jsx */ "./js/template.jsx");
 
 var _list = __webpack_require__(/*! ./list.jsx */ "./js/list.jsx");
-
-var _ToModify = __webpack_require__(/*! ./ToModify.jsx */ "./js/ToModify.jsx");
 
 var _reactRouter = __webpack_require__(/*! react-router */ "./node_modules/react-router/es/index.js");
 
@@ -841,6 +809,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+// import { Menu } from './menu.jsx';
+
+
+// import 'bootstrap';
+
 
 document.addEventListener('DOMContentLoaded', function () {
     var App = function (_React$Component) {
@@ -861,9 +834,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     _react2.default.createElement(
                         _reactRouter.Route,
                         { path: '/', component: _template.Template },
-                        _react2.default.createElement(_reactRouter.IndexRoute, { component: _menu.Menu }),
-                        _react2.default.createElement(_reactRouter.Route, { path: 'list', component: _list.List }),
-                        _react2.default.createElement(_reactRouter.Route, { path: 'toModify/:id', component: _ToModify.ToModify })
+                        _react2.default.createElement(_reactRouter.IndexRoute, { component: _list.List }),
+                        _react2.default.createElement(_reactRouter.Route, { path: 'list', component: _list.List })
                     )
                 );
             }
@@ -929,34 +901,12 @@ var Template = function (_React$Component) {
                     ' TO DO LIST'
                 ),
                 _react2.default.createElement(
-                    'ul',
+                    'h3',
                     null,
                     _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/' },
-                            'Menu'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/list' },
-                            'List'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/toModify/id' },
-                            'Modify'
-                        )
+                        _reactRouter.IndexLink,
+                        { to: '/list' },
+                        'Create your list'
                     )
                 ),
                 this.props.children
@@ -1959,7 +1909,7 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".bigBox {\n  width: 400px;\n  height: 450px;\n  border: 1px solid grey;\n  background-color: grey;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  align-items: center; }\n\n.smallBoxes {\n  width: 80px;\n  height: 80px;\n  background-color: cyan;\n  flex-grow: 1;\n  margin: 10px 5px;\n  display: block; }\n\n.showPicture {\n  display: none; }\n", ""]);
+exports.push([module.i, ".main-form {\n    background-color: #aacabb\n}\n\n.lists {\n    background-color: pink;\n}\n\n.to-do-list {\n    background-color: #d4d1d8;\n    border: 1px solid #a29fa6;\n    height: 20rem;\n}\n\n.completed-tasks {\n    background-color: #d4d1d8;\n    border: 1px solid #a29fa6;\n    height: 20rem\n}\n\nh4 {\n    text-align: center;\n    background-color: white;\n}\n", ""]);
 
 // exports
 
