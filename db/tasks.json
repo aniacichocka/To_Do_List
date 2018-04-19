@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "date": "05.04.2018",
-      "title": "zakupy",
-      "description": "warzywa, owoce, mleko"
-    },
-    {
       "id": 4
     },
     {
@@ -16,76 +10,16 @@
       "id": 6
     },
     {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 9
+      "date": "gtgt",
+      "title": "gtg",
+      "description": "tgtg",
+      "id": 7
     },
     {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 10
-    },
-    {
-      "date": "deded",
-      "title": "deded",
-      "description": "eded",
-      "id": 11
-    },
-    {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 15
-    },
-    {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 16
-    },
-    {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 17
-    },
-    {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 18
-    },
-    {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 19
-    },
-    {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 20
-    },
-    {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 21
-    },
-    {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 24
-    },
-    {
-      "date": "",
-      "title": "",
-      "description": "",
-      "id": 25
+      "date": "ef",
+      "title": "efe",
+      "description": "few",
+      "id": 8
     }
   ]
 }

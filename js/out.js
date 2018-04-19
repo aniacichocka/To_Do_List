@@ -180,19 +180,19 @@ var AddItem = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'form',
-                { className: 'row' },
+                { className: 'row main-form' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'input-group row' },
+                    { className: 'input-group row no-gutter' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'input-group-prepend col-12' },
+                        { className: 'input-group-prepend col-sm-12' },
                         _react2.default.createElement(
                             'label',
-                            { 'for': 'date', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
+                            { 'for': 'date', className: 'input-group-text col-sm-2 mb-3' },
                             'Date: '
                         ),
-                        _react2.default.createElement('input', { id: 'date', className: 'form-control col-10 col-sm-9 mr-2 mb-2', value: this.state.newDate, onChange: this.handleChangeDate })
+                        _react2.default.createElement('input', { id: 'date', className: 'form-control col-sm-10 mb-3', placeholder: '01/04/2018', value: this.state.newDate, onChange: this.handleChangeDate })
                     )
                 ),
                 _react2.default.createElement(
@@ -200,13 +200,13 @@ var AddItem = function (_React$Component) {
                     { className: 'input-group row' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'input-group-prepend col-12' },
+                        { className: 'input-group-prepend col-sm-12' },
                         _react2.default.createElement(
                             'label',
-                            { 'for': 'title', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
+                            { 'for': 'title', className: 'input-group-text col-sm-2 mb-3' },
                             'Title: '
                         ),
-                        _react2.default.createElement('input', { id: 'title', className: 'form-control col-10 col-sm-9 mr-2 mb-2', value: this.state.newTitle, onChange: this.handleChangeTitle })
+                        _react2.default.createElement('input', { id: 'title', className: 'form-control col-sm-10 mb-3', value: this.state.newTitle, onChange: this.handleChangeTitle })
                     )
                 ),
                 _react2.default.createElement(
@@ -214,16 +214,16 @@ var AddItem = function (_React$Component) {
                     { className: 'input-group row' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'input-group-prepend col-12' },
+                        { className: 'input-group-prepend col-sm-12' },
                         _react2.default.createElement(
                             'label',
-                            { 'for': 'description', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
+                            { 'for': 'description', className: 'input-group-text col-sm-2 mb-3' },
                             'Description: '
                         ),
-                        _react2.default.createElement('textarea', { id: 'description', className: 'form-control col-9 col-sm-7 mr-2 mb-2', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription, onChange: this.handleChangeDescription }),
+                        _react2.default.createElement('textarea', { id: 'description', className: 'form-control col-sm-9 mb-3', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription, onChange: this.handleChangeDescription }),
                         _react2.default.createElement(
                             'button',
-                            { className: 'btn btn-outline-secondary  col-1 col-sm-2 mr-2 mb-2', type: 'button', onClick: this.handleClick },
+                            { className: 'btn-add btn btn-outline-secondary col-sm-1 mb-3', type: 'button', onClick: this.handleClick },
                             'Add'
                         )
                     )
@@ -466,100 +466,129 @@ var List = function (_React$Component) {
                 'div',
                 { className: 'container' },
                 _react2.default.createElement(
-                    'div',
-                    { className: 'mainForm' },
-                    _react2.default.createElement(_addItem.AddItem, { post: this.postItem })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'lists' },
+                    'header',
+                    null,
                     _react2.default.createElement(
                         'div',
-                        { className: 'row' },
+                        null,
+                        _react2.default.createElement(
+                            'span',
+                            null,
+                            'My to do list'
+                        )
+                    )
+                ),
+                _react2.default.createElement(_addItem.AddItem, { post: this.postItem }),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row lists' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-sm-4 to-do-list' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-6 to-do-list' },
+                            { className: 'row justify-content-sm-center' },
                             _react2.default.createElement(
                                 'h4',
                                 null,
-                                'To do list'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                null,
-                                list
+                                'New tasks'
                             )
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-6 completed-tasks' },
+                            null,
+                            list
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'input-group col-sm-4' },
+                        this.state.modifyArea && _react2.default.createElement(
+                            'form',
+                            null,
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'input-group' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-12 justify-content-center' },
+                                    _react2.default.createElement(
+                                        'label',
+                                        { 'for': 'change-date', className: 'input-group-text col-sm-12' },
+                                        'Date: '
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-12' },
+                                    _react2.default.createElement('input', { id: 'change-date', className: 'form-control col-sm-12 mb-4 input-date', value: this.state.modDate, onChange: this.handleModDate })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'input-group' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-12 justify-content-center' },
+                                    _react2.default.createElement(
+                                        'label',
+                                        { 'for': 'change-title', className: 'input-group-text col-sm-12' },
+                                        'Title: '
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-12' },
+                                    _react2.default.createElement('input', { id: 'change-title', className: 'form-control col-sm-12 mb-4 input-title', value: this.state.modTitle, onChange: this.handleModTitle })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'input-group' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-12 justify-content-center' },
+                                    _react2.default.createElement(
+                                        'label',
+                                        { 'for': 'change-description', className: 'input-group-text col-sm-12' },
+                                        'Description: '
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-12' },
+                                    _react2.default.createElement('textarea', { id: 'change-description', className: 'form-control col-sm-12 mb-2 input-descr', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription, onChange: this.handleChangeDescription })
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-sm-12' },
+                                    _react2.default.createElement(
+                                        'button',
+                                        { className: 'btn-modify btn-outline-secondary col-sm-12', type: 'button', onClick: function onClick(e) {
+                                                return handleClickMod(e);
+                                            } },
+                                        'Modify'
+                                    )
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-sm-4 completed-tasks' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'row justify-content-sm-center' },
                             _react2.default.createElement(
                                 'h4',
                                 null,
                                 'Completed tasks'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                null,
-                                list2
-                            )
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'input-group' },
-                    this.state.modifyArea && _react2.default.createElement(
-                        'form',
-                        { className: 'row' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'input-group row' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'input-group-prepend col-12' },
-                                _react2.default.createElement(
-                                    'label',
-                                    { 'for': 'date', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
-                                    'Date: '
-                                ),
-                                _react2.default.createElement('input', { id: 'date', className: 'form-control col-10 col-sm-9 mr-2 mb-2 input-date', value: this.state.modDate, onChange: this.handleModDate })
                             )
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'input-group row' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'input-group-prepend col-12' },
-                                _react2.default.createElement(
-                                    'label',
-                                    { 'for': 'title', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
-                                    'Title: '
-                                ),
-                                _react2.default.createElement('input', { id: 'title', className: 'form-control col-10 col-sm-9 mr-2 mb-2 input-title', value: this.state.modTitle, onChange: this.handleModTitle })
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'input-group row' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'input-group-prepend col-12' },
-                                _react2.default.createElement(
-                                    'label',
-                                    { 'for': 'description', className: 'input-group-text col-2 col-sm-3 mr-2 mb-2' },
-                                    'Description: '
-                                ),
-                                _react2.default.createElement('textarea', { id: 'description', className: 'form-control col-9 col-sm-7 mr-2 mb-2 input-descr', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription, onChange: this.handleChangeDescription }),
-                                _react2.default.createElement(
-                                    'button',
-                                    { className: 'btn btn-outline-secondary col-1 col-sm-2 mr-2 mb-2', type: 'button', onClick: function onClick(e) {
-                                            return handleClickMod(e);
-                                        } },
-                                    'Modify'
-                                )
-                            )
+                            null,
+                            list2
                         )
                     )
                 )
@@ -653,7 +682,7 @@ var ListItem = function (_React$Component) {
 
             return _react2.default.createElement(
                 'div',
-                { key: this.props.item.id },
+                { key: this.props.item.id, className: 'list-element' },
                 _react2.default.createElement(
                     'div',
                     { onClick: this.handleClickTitle },
@@ -677,12 +706,13 @@ var ListItem = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             'p',
-                            null,
+                            { className: 'list-element' },
+                            ' - ',
                             this.props.item.description
                         ),
                         _react2.default.createElement(
                             'div',
-                            null,
+                            { className: 'btn-options' },
                             _react2.default.createElement(
                                 'button',
                                 { onClick: function onClick(e) {
@@ -755,13 +785,13 @@ var ListItemDelete = function (_React$Component) {
     }
 
     _createClass(ListItemDelete, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                { key: this.props.item.id },
+                "div",
+                { key: this.props.item.id, className: "list-element" },
                 _react2.default.createElement(
-                    'span',
+                    "span",
                     null,
                     this.props.item.title
                 )
@@ -1909,7 +1939,7 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".main-form {\n    background-color: #aacabb\n}\n\n.lists {\n    background-color: pink;\n}\n\n.to-do-list {\n    background-color: #d4d1d8;\n    border: 1px solid #a29fa6;\n    height: 20rem;\n}\n\n.completed-tasks {\n    background-color: #d4d1d8;\n    border: 1px solid #a29fa6;\n    height: 20rem\n}\n\nh4 {\n    text-align: center;\n    background-color: white;\n}\n", ""]);
+exports.push([module.i, "/* @font-face {\n    font-family: 'Muli';\n    src: url('../Muli-BoldItalic.eot');\n    src: url('../Muli-BoldItalic.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-BoldItalic.woff2') format('woff2'),\n        url('../Muli-BoldItalic.woff') format('woff'),\n        url('../Muli-BoldItalic.ttf') format('truetype'),\n        url('../Muli-BoldItalic.svg#Muli-BoldItalic') format('svg');\n    font-weight: bold;\n    font-style: italic;\n} */\n\n/* @font-face {\n    font-family: 'Muli';\n    src: url('../Muli-ExtraBoldItalic.eot');\n    src: url('../Muli-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-ExtraBoldItalic.woff2') format('woff2'),\n        url('../Muli-ExtraBoldItalic.woff') format('woff'),\n        url('../Muli-ExtraBoldItalic.ttf') format('truetype'),\n        url('../Muli-ExtraBoldItalic.svg#Muli-ExtraBoldItalic') format('svg');\n    font-weight: 800;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-BlackItalic.eot');\n    src: url('../Muli-BlackItalic.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-BlackItalic.woff2') format('woff2'),\n        url('../Muli-BlackItalic.woff') format('woff'),\n        url('../Muli-BlackItalic.ttf') format('truetype'),\n        url('../Muli-BlackItalic.svg#Muli-BlackItalic') format('svg');\n    font-weight: 900;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-Black.eot');\n    src: url('../Muli-Black.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-Black.woff2') format('woff2'),\n        url('../Muli-Black.woff') format('woff'),\n        url('../Muli-Black.ttf') format('truetype'),\n        url('../Muli-Black.svg#Muli-Black') format('svg');\n    font-weight: 900;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-SemiBold.eot');\n    src: url('../Muli-SemiBold.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-SemiBold.woff2') format('woff2'),\n        url('../Muli-SemiBold.woff') format('woff'),\n        url('../Muli-SemiBold.ttf') format('truetype'),\n        url('../Muli-SemiBold.svg#Muli-SemiBold') format('svg');\n    font-weight: 600;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-SemiBoldItalic.eot');\n    src: url('../Muli-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-SemiBoldItalic.woff2') format('woff2'),\n        url('../Muli-SemiBoldItalic.woff') format('woff'),\n        url('../Muli-SemiBoldItalic.ttf') format('truetype'),\n        url('../Muli-SemiBoldItalic.svg#Muli-SemiBoldItalic') format('svg');\n    font-weight: 600;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-ExtraBold.eot');\n    src: url('../Muli-ExtraBold.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-ExtraBold.woff2') format('woff2'),\n        url('../Muli-ExtraBold.woff') format('woff'),\n        url('../Muli-ExtraBold.ttf') format('truetype'),\n        url('../Muli-ExtraBold.svg#Muli-ExtraBold') format('svg');\n    font-weight: 800;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-Light.eot');\n    src: url('../Muli-Light.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-Light.woff2') format('woff2'),\n        url('../Muli-Light.woff') format('woff'),\n        url('../Muli-Light.ttf') format('truetype'),\n        url('../Muli-Light.svg#Muli-Light') format('svg');\n    font-weight: 300;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-ExtraLightItalic.eot');\n    src: url('../Muli-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-ExtraLightItalic.woff2') format('woff2'),\n        url('../Muli-ExtraLightItalic.woff') format('woff'),\n        url('../Muli-ExtraLightItalic.ttf') format('truetype'),\n        url('../Muli-ExtraLightItalic.svg#Muli-ExtraLightItalic') format('svg');\n    font-weight: 200;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-ExtraLight.eot');\n    src: url('../Muli-ExtraLight.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-ExtraLight.woff2') format('woff2'),\n        url('../Muli-ExtraLight.woff') format('woff'),\n        url('../Muli-ExtraLight.ttf') format('truetype'),\n        url('../Muli-ExtraLight.svg#Muli-ExtraLight') format('svg');\n    font-weight: 200;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-Regular.eot');\n    src: url('../Muli-Regular.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-Regular.woff2') format('woff2'),\n        url('../Muli-Regular.woff') format('woff'),\n        url('../Muli-Regular.ttf') format('truetype'),\n        url('../Muli-Regular.svg#Muli-Regular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-Italic.eot');\n    src: url('../Muli-Italic.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-Italic.woff2') format('woff2'),\n        url('../Muli-Italic.woff') format('woff'),\n        url('../Muli-Italic.ttf') format('truetype'),\n        url('../Muli-Italic.svg#Muli-Italic') format('svg');\n    font-weight: normal;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-LightItalic.eot');\n    src: url('../Muli-LightItalic.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-LightItalic.woff2') format('woff2'),\n        url('../Muli-LightItalic.woff') format('woff'),\n        url('../Muli-LightItalic.ttf') format('truetype'),\n        url('../Muli-LightItalic.svg#Muli-LightItalic') format('svg');\n    font-weight: 300;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url('../Muli-Bold.eot');\n    src: url('../Muli-Bold.eot?#iefix') format('embedded-opentype'),\n        url('../Muli-Bold.woff2') format('woff2'),\n        url('../Muli-Bold.woff') format('woff'),\n        url('../Muli-Bold.ttf') format('truetype'),\n        url('../Muli-Bold.svg#Muli-Bold') format('svg');\n    font-weight: bold;\n    font-style: normal;\n} */\n\n\nbody {\n    font-family: \"Muli\", sans-serif;\n    color: #424147;\n}\n\nh4 {\n    color: #424147;\n    padding: 1rem 0;\n    text-decoration: underline;\n}\n\n.main-form {\n    padding-left: 0;\n    margin-bottom: 8rem;\n}\n\n.lists {\n    margin-bottom: 8rem;\n}\n\n.to-do-list {\n    border: 2px solid #a29fa6;\n    height: 22rem;\n}\n\n.list-element {\n    text-align: center;\n}\n\n.completed-tasks {\n    border: 2px solid #a29fa6;\n    height: 22rem;\n}\n\n.list-element:nth-child(2n+2){\n    color: #777777;\n}\n\n.input-group,\n.input-group-prepend {\n    padding: 0;\n}\n\n.form-control {\n    border: 2px solid #a29fa6;\n}\n\n.input-group-text,\n.btn-add,\n.btn-modify,\n.btn-options button {\n    border: 2px solid #a29fa6;\n    background-color: lightgrey;\n    color: #424147;\n}\n\n.btn-modify {\n    padding: 0.1rem 0;\n}\n\n.btn-options button {\n    margin: 0 0.1rem;\n    width: 5.4rem;\n}\n", ""]);
 
 // exports
 

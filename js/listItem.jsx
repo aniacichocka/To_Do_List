@@ -37,11 +37,14 @@ class ListItem extends React.Component {
 
     render() {
         return (
-            <div key={this.props.item.id}>
-                <div onClick = {this.handleClickTitle}><span>{this.props.item.date}</span><span> {this.props.item.title}</span></div>
+            <div key={this.props.item.id} className = "list-element">
+                <div onClick = {this.handleClickTitle}>
+                    <span>{this.props.item.date}</span>
+                    <span> {this.props.item.title}</span>
+                </div>
                 <div>{this.state.show && <div>
-                    <p>{this.props.item.description}</p>
-                    <div>
+                    <p className = "list-element"> - {this.props.item.description}</p>
+                    <div className = "btn-options">
                         <button onClick = {e => this.hadleClickModify(e, this.props.item)}>to modify</button>
                         <button onClick = {e => this.hadleClickCompleted(e, this.props.item)}>completed</button>
                         <button onClick = {this.handleClickHide}>hide</button>

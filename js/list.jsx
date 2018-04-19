@@ -182,48 +182,86 @@ class List extends React.Component {
 
         return (
             <div className = "container">
-                <div className = "mainForm">
-                    <AddItem post = {this.postItem}/>
-                </div>
-                <div className = "lists">
-                    <div className = "row">
-                        <div className = "col-6 to-do-list">
-                            <h4>To do list</h4>
-                            <div>
-                                {list}
-                            </div>
+                <header>
+                    <div>
+                        <span>My to do list</span>
+                    </div>    
+                </header>
+                <AddItem post = {this.postItem}/>
+                <div className = "row lists">
+                    <div className = "col-sm-4 to-do-list">
+                        <div className = "row justify-content-sm-center">
+                            <h4>New tasks</h4>
                         </div>
-                        <div  className = "col-6 completed-tasks">
-                            <h4>Completed tasks</h4>
-                            <div>
-                                {list2}
+                        <div>
+                            {list}
+                        </div>
+                    </div>
+                    <div className = "input-group col-sm-4">{this.state.modifyArea &&
+                        <form>
+                            <div className = "input-group">
+                                <div className = "col-sm-12 justify-content-center">
+                                    <label for = "change-date" className = "input-group-text col-sm-12">Date: </label>
+                                </div>
+                                <div className = "col-sm-12">
+                                    <input id = "change-date" className = "form-control col-sm-12 mb-4 input-date" value = {this.state.modDate} onChange = {this.handleModDate}></input>
+                                </div>
                             </div>
+                            <div className = "input-group">
+                                <div className = "col-sm-12 justify-content-center">
+                                    <label for = "change-title" className = "input-group-text col-sm-12">Title: </label>
+                                </div>
+                                <div className = "col-sm-12">
+                                    <input id = "change-title" className = "form-control col-sm-12 mb-4 input-title" value = {this.state.modTitle} onChange = {this.handleModTitle}></input>
+                                </div>
+                            </div>
+                            <div className = "input-group">
+                                <div className = "col-sm-12 justify-content-center">
+                                    <label for = "change-description" className = "input-group-text col-sm-12">Description: </label>
+                                </div>
+                                <div className = "col-sm-12">
+                                    <textarea id = "change-description" className = "form-control col-sm-12 mb-2 input-descr" aria-label = "With textarea" maxLength = '160' cols = '100' rows = '2' value = {this.state.newDescription} onChange = {this.handleChangeDescription}></textarea>
+                                </div>
+                                <div className = "col-sm-12">
+                                    <button className = "btn-modify btn-outline-secondary col-sm-12" type = "button" onClick = {e => handleClickMod(e)}>Modify</button>
+                                </div>
+                            </div>
+                        </form>}
+                    </div>
+                    <div className = "col-sm-4 completed-tasks">
+                        <div className = "row justify-content-sm-center">
+                            <h4>Completed tasks</h4>
+                        </div>
+                        <div>
+                            {list2}
                         </div>
                     </div>
                 </div>
-                <div className = "input-group">{this.state.modifyArea &&
-                    <form className = "row">
-                        <div className = "input-group row">
-                            <div className = "input-group-prepend col-12">
-                                <label for = "date" className = "input-group-text col-2 col-sm-3 mr-2 mb-2">Date: </label>
-                                <input id = "date" className = "form-control col-10 col-sm-9 mr-2 mb-2 input-date" value = {this.state.modDate} onChange = {this.handleModDate}></input>
+                {/* <div className = "row justify-content-sm-center">
+                    <div className = "input-group col-sm-8">{this.state.modifyArea &&
+                        <form>
+                            <div className = "input-group row">
+                                <div className = "input-group-prepend col-sm-12">
+                                    <label for = "date" className = "input-group-text col-sm-2 mb-3">Date: </label>
+                                    <input id = "date" className = "form-control col-sm-10 mb-3 input-date" value = {this.state.modDate} onChange = {this.handleModDate}></input>
+                                </div>
                             </div>
-                        </div>
-                        <div className = "input-group row">
-                            <div className = "input-group-prepend col-12">
-                                <label for = "title" className = "input-group-text col-2 col-sm-3 mr-2 mb-2">Title: </label>
-                                <input id = "title" className = "form-control col-10 col-sm-9 mr-2 mb-2 input-title" value = {this.state.modTitle} onChange = {this.handleModTitle}></input>
+                            <div className = "input-group row">
+                                <div className = "input-group-prepend col-sm-12">
+                                    <label for = "title" className = "input-group-text col-sm-2 mb-3">Title: </label>
+                                    <input id = "title" className = "form-control col-sm-10 mb-3 input-title" value = {this.state.modTitle} onChange = {this.handleModTitle}></input>
+                                </div>
                             </div>
-                        </div>
-                        <div className = "input-group row">
-                            <div className = "input-group-prepend col-12">
-                                <label for = "description" className = "input-group-text col-2 col-sm-3 mr-2 mb-2">Description: </label>
-                                <textarea id = "description" className = "form-control col-9 col-sm-7 mr-2 mb-2 input-descr" aria-label = "With textarea" maxLength = '160' cols = '100' rows = '2' value = {this.state.newDescription} onChange = {this.handleChangeDescription}></textarea>
-                                <button className = "btn btn-outline-secondary col-1 col-sm-2 mr-2 mb-2" type = "button" onClick = {e => handleClickMod(e)}>Modify</button>
+                            <div className = "input-group row">
+                                <div className = "input-group-prepend col-sm-12">
+                                    <label for = "description" className = "input-group-text col-sm-2 mb-3">Description: </label>
+                                    <textarea id = "description" className = "form-control col-sm-8 mb-3 input-descr" aria-label = "With textarea" maxLength = '160' cols = '100' rows = '2' value = {this.state.newDescription} onChange = {this.handleChangeDescription}></textarea>
+                                    <button className = "btn btn-outline-secondary col-sm-2 mb-3" type = "button" onClick = {e => handleClickMod(e)}>Modify</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>}
-                </div>
+                        </form>}
+                    </div>
+                </div> */}
             </div>
         )
     }
