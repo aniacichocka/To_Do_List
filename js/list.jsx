@@ -2,7 +2,6 @@ import React from 'react';
 import { ListItem } from './listItem.jsx';
 import { ListItemDelete } from './listItemDelete.jsx';
 import { AddItem } from './addItem.jsx';
-// import { Menu } from './menu.jsx';
 
 
 class List extends React.Component {
@@ -80,7 +79,7 @@ class List extends React.Component {
     deleteItem (item) {
         console.log(item);
 
-        fetch('http://localhost:3000/tasks/' + item.id, {
+        fetch(`http://localhost:3000/tasks/${item.id}`, {
             method: 'DELETE',
             headers: new Headers({
                 'Content-Type': 'application/json'
@@ -113,43 +112,61 @@ class List extends React.Component {
         })
     }
 
-    handleClickMod = () => {
+    handleClickMod = (event) => {
         const inputDate = document.querySelector('.input-date').value;
         const inputTitle = document.querySelector('.input-title').value;
         const inputDescr = document.querySelector('.input-descr').value;
+        const elementId = event.currentTarget.parentElement.parentElement;
+        const elementsTasks = document.querySelectorAll('.single-element');
+        let elId;
+
+        elementsTasks.forEach((element) => {
+
+            if (element.querySelector('.element-description')){
+                elId = element.querySelector('.element-description').parentElement.parentElement.parentElement.getAttribute('id');
+            }
+        });
 
         const changeItem = {
             date: inputDate,
             title: inputTitle,
-            description: inputDescr
+            description: inputDescr,
+            id: elId
         }
-        console.log(this.thisItem);
-        // fetch('http://localhost:3000/tasks/' + this.thisItem.id, {
-        //     method: 'PUT',
-        //     body: JSON.stringify(changeItem),
-        //     headers: new Headers({
-        //         'Content-Type': 'application/json'
-        //     })
-        // })
-        // .then(resp => {
-        //     console.log(resp);
-        //     return resp.json();
-        // })
-        // .then(data=> {
-        //     console.log(data);
-        //     // let changeData = this.state.changeDataArr;
-        //     // changeData = changeData.filter((el, index) => {
-        //     //     return el.id !== this.param.id
-        //     // })
-        //     // changeData.push(changeItem);
-        //     //
-        //     // this.setState({
-        //     //     changeDataArr: changeData
-        //     // })
-        // })
-        // .catch(err => {
-        //     console.log('Błąd!', err);
-        // });
+        console.log(changeItem);
+        const allState = [...this.state.mainData];
+        let counter = 0;
+        let oldElement;
+        allState.forEach((element, index) => {
+            if (element.id == elId) {
+                oldElement = index;
+                return;
+            }
+        });
+        allState[oldElement] = changeItem;
+
+        this.setState({
+            mainData: allState,
+            modifyArea: false
+        });
+
+        fetch(`http://localhost:3000/tasks/${elId}`, {
+            method: 'PUT',
+            body: JSON.stringify(changeItem),
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            })
+        })
+        .then(resp => {
+            // console.log(resp);
+            return resp.json();
+        })
+        .then(data=> {
+        })
+
+        .catch(err => {
+            console.log('Błąd!', err);
+        });
     }
 
     modifyItem (item) {
@@ -172,6 +189,7 @@ class List extends React.Component {
     }
 
     render() {
+
         let list = this.state.mainData.map(el => {
             return <ListItem item = {el} delete = {this.deleteItem} modify = {this.modifyItem}/>
         })
@@ -182,10 +200,12 @@ class List extends React.Component {
 
         return (
             <div className = "container">
-                <header>
-                    <div>
-                        <span>My to do list</span>
-                    </div>    
+                <header className = "row">
+                    <div className = "headline col-sm-12">
+                        <div>
+                            <h1 className = "text-center">TO DO LIST</h1>
+                        </div>
+                    </div>
                 </header>
                 <AddItem post = {this.postItem}/>
                 <div className = "row lists">
@@ -217,13 +237,13 @@ class List extends React.Component {
                             </div>
                             <div className = "input-group">
                                 <div className = "col-sm-12 justify-content-center">
-                                    <label for = "change-description" className = "input-group-text col-sm-12">Description: </label>
+                                    <label for = "change-description" className = "input-group-text col-sm-12">Details: </label>
                                 </div>
                                 <div className = "col-sm-12">
-                                    <textarea id = "change-description" className = "form-control col-sm-12 mb-2 input-descr" aria-label = "With textarea" maxLength = '160' cols = '100' rows = '2' value = {this.state.newDescription} onChange = {this.handleChangeDescription}></textarea>
+                                    <textarea id = "change-description" className = "form-control col-sm-12 mb-4 input-descr" aria-label = "With textarea" maxLength = '160' cols = '100' rows = '3' value = {this.state.newDescription} onChange = {this.handleChangeDescription}></textarea>
                                 </div>
                                 <div className = "col-sm-12">
-                                    <button className = "btn-modify btn-outline-secondary col-sm-12" type = "button" onClick = {e => handleClickMod(e)}>Modify</button>
+                                    <button className = "btn-modify btn-outline-secondary col-sm-12" type = "button" onClick = {e => this.handleClickMod(e)}>Modify</button>
                                 </div>
                             </div>
                         </form>}
@@ -237,31 +257,6 @@ class List extends React.Component {
                         </div>
                     </div>
                 </div>
-                {/* <div className = "row justify-content-sm-center">
-                    <div className = "input-group col-sm-8">{this.state.modifyArea &&
-                        <form>
-                            <div className = "input-group row">
-                                <div className = "input-group-prepend col-sm-12">
-                                    <label for = "date" className = "input-group-text col-sm-2 mb-3">Date: </label>
-                                    <input id = "date" className = "form-control col-sm-10 mb-3 input-date" value = {this.state.modDate} onChange = {this.handleModDate}></input>
-                                </div>
-                            </div>
-                            <div className = "input-group row">
-                                <div className = "input-group-prepend col-sm-12">
-                                    <label for = "title" className = "input-group-text col-sm-2 mb-3">Title: </label>
-                                    <input id = "title" className = "form-control col-sm-10 mb-3 input-title" value = {this.state.modTitle} onChange = {this.handleModTitle}></input>
-                                </div>
-                            </div>
-                            <div className = "input-group row">
-                                <div className = "input-group-prepend col-sm-12">
-                                    <label for = "description" className = "input-group-text col-sm-2 mb-3">Description: </label>
-                                    <textarea id = "description" className = "form-control col-sm-8 mb-3 input-descr" aria-label = "With textarea" maxLength = '160' cols = '100' rows = '2' value = {this.state.newDescription} onChange = {this.handleChangeDescription}></textarea>
-                                    <button className = "btn btn-outline-secondary col-sm-2 mb-3" type = "button" onClick = {e => handleClickMod(e)}>Modify</button>
-                                </div>
-                            </div>
-                        </form>}
-                    </div>
-                </div> */}
             </div>
         )
     }
