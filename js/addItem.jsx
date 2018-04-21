@@ -4,9 +4,9 @@ class AddItem extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            newDate: '',
-            newTitle: '',
-            newDescription: ''
+            newDate: "",
+            newTitle: "",
+            newDescription: ""
         }
     }
 
@@ -29,30 +29,30 @@ class AddItem extends React.Component {
     }
 
     handleClick = () => {
-        if (typeof this.props.post === 'function') {
+        if (typeof this.props.post === "function") {
             this.props.post(this.state.newDate, this.state.newTitle, this.state.newDescription);
         }
         this.setState({
-            newDate: '',
-            newTitle: '',
-            newDescription: ''
+            newDate: "",
+            newTitle: "",
+            newDescription: ""
         })
     }
 
-    keyPress = (event) => {
-        if (event.charCode > 46 && event.charCode < 58 || event.charCode > 95 && event.chatCode < 106){
-            console.log(event.charCode);
-        } else {
-            event.preventDefault();
-        }
-    }
+    // keyPress = (event) => {
+    //     if (event.charCode > 46 && event.charCode < 58 || event.charCode > 95 && event.chatCode < 106) {
+    //     } else {
+    //         event.preventDefault();
+    //     }
+    // }
+
     render() {
         return (
             <form className = "main-form row">
-                <div className = "input-group col-sm-12">
-                    <div className = "input-group-prepend col-sm-12">
+                <div className = "input-group col">
+                    <div className = "input-group-prepend col-12">
                         <label for = "date" className = "input-group-text col-sm-2 mb-3">Date: </label>
-                        <input id = "date" className = "form-control col-sm-10 mb-3" placeholder = "01/04/2018" value = {this.state.newDate} onChange = {this.handleChangeDate} onKeyPress = {this.keyPress}></input>
+                        <input id = "date" type = "date" className = "form-control col-sm-10 mb-3" placeholder = "01/04/2018" value = {this.state.newDate} onChange = {this.handleChangeDate} onKeyPress = {this.keyPress}></input>
                     </div>
                 </div>
                 <div className = "input-group col-sm-12">

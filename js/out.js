@@ -101,6 +101,116 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./fonts/Muli-Black.eot":
+/*!******************************!*\
+  !*** ./fonts/Muli-Black.eot ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Black.eot";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Black.svg":
+/*!******************************!*\
+  !*** ./fonts/Muli-Black.svg ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <?xml version=\"1.0\" standalone=\"no\"?>\n| <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\" >\n| <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\">");
+
+/***/ }),
+
+/***/ "./fonts/Muli-Black.ttf":
+/*!******************************!*\
+  !*** ./fonts/Muli-Black.ttf ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Black.ttf";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Black.woff":
+/*!*******************************!*\
+  !*** ./fonts/Muli-Black.woff ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Black.woff";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Black.woff2":
+/*!********************************!*\
+  !*** ./fonts/Muli-Black.woff2 ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Black.woff2";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Bold.eot":
+/*!*****************************!*\
+  !*** ./fonts/Muli-Bold.eot ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Bold.eot";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Bold.svg":
+/*!*****************************!*\
+  !*** ./fonts/Muli-Bold.svg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <?xml version=\"1.0\" standalone=\"no\"?>\n| <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\" >\n| <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\">");
+
+/***/ }),
+
+/***/ "./fonts/Muli-Bold.ttf":
+/*!*****************************!*\
+  !*** ./fonts/Muli-Bold.ttf ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Bold.ttf";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Bold.woff":
+/*!******************************!*\
+  !*** ./fonts/Muli-Bold.woff ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Bold.woff";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Bold.woff2":
+/*!*******************************!*\
+  !*** ./fonts/Muli-Bold.woff2 ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Bold.woff2";
+
+/***/ }),
+
 /***/ "./fonts/Muli-BoldItalic.eot":
 /*!***********************************!*\
   !*** ./fonts/Muli-BoldItalic.eot ***!
@@ -153,6 +263,281 @@ module.exports = "fonts/Muli-BoldItalic.woff";
 /***/ (function(module, exports) {
 
 module.exports = "fonts/Muli-BoldItalic.woff2";
+
+/***/ }),
+
+/***/ "./fonts/Muli-ExtraLightItalic.eot":
+/*!*****************************************!*\
+  !*** ./fonts/Muli-ExtraLightItalic.eot ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-ExtraLightItalic.eot";
+
+/***/ }),
+
+/***/ "./fonts/Muli-ExtraLightItalic.svg":
+/*!*****************************************!*\
+  !*** ./fonts/Muli-ExtraLightItalic.svg ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <?xml version=\"1.0\" standalone=\"no\"?>\n| <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\" >\n| <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\">");
+
+/***/ }),
+
+/***/ "./fonts/Muli-ExtraLightItalic.ttf":
+/*!*****************************************!*\
+  !*** ./fonts/Muli-ExtraLightItalic.ttf ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-ExtraLightItalic.ttf";
+
+/***/ }),
+
+/***/ "./fonts/Muli-ExtraLightItalic.woff":
+/*!******************************************!*\
+  !*** ./fonts/Muli-ExtraLightItalic.woff ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-ExtraLightItalic.woff";
+
+/***/ }),
+
+/***/ "./fonts/Muli-ExtraLightItalic.woff2":
+/*!*******************************************!*\
+  !*** ./fonts/Muli-ExtraLightItalic.woff2 ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-ExtraLightItalic.woff2";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Italic.eot":
+/*!*******************************!*\
+  !*** ./fonts/Muli-Italic.eot ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Italic.eot";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Italic.svg":
+/*!*******************************!*\
+  !*** ./fonts/Muli-Italic.svg ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <?xml version=\"1.0\" standalone=\"no\"?>\n| <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\" >\n| <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\">");
+
+/***/ }),
+
+/***/ "./fonts/Muli-Italic.ttf":
+/*!*******************************!*\
+  !*** ./fonts/Muli-Italic.ttf ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Italic.ttf";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Italic.woff":
+/*!********************************!*\
+  !*** ./fonts/Muli-Italic.woff ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Italic.woff";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Italic.woff2":
+/*!*********************************!*\
+  !*** ./fonts/Muli-Italic.woff2 ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Italic.woff2";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Regular.eot":
+/*!********************************!*\
+  !*** ./fonts/Muli-Regular.eot ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Regular.eot";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Regular.svg":
+/*!********************************!*\
+  !*** ./fonts/Muli-Regular.svg ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <?xml version=\"1.0\" standalone=\"no\"?>\n| <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\" >\n| <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\">");
+
+/***/ }),
+
+/***/ "./fonts/Muli-Regular.ttf":
+/*!********************************!*\
+  !*** ./fonts/Muli-Regular.ttf ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Regular.ttf";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Regular.woff":
+/*!*********************************!*\
+  !*** ./fonts/Muli-Regular.woff ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Regular.woff";
+
+/***/ }),
+
+/***/ "./fonts/Muli-Regular.woff2":
+/*!**********************************!*\
+  !*** ./fonts/Muli-Regular.woff2 ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-Regular.woff2";
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBold.eot":
+/*!*********************************!*\
+  !*** ./fonts/Muli-SemiBold.eot ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-SemiBold.eot";
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBold.svg":
+/*!*********************************!*\
+  !*** ./fonts/Muli-SemiBold.svg ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <?xml version=\"1.0\" standalone=\"no\"?>\n| <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\" >\n| <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\">");
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBold.ttf":
+/*!*********************************!*\
+  !*** ./fonts/Muli-SemiBold.ttf ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-SemiBold.ttf";
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBold.woff":
+/*!**********************************!*\
+  !*** ./fonts/Muli-SemiBold.woff ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-SemiBold.woff";
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBold.woff2":
+/*!***********************************!*\
+  !*** ./fonts/Muli-SemiBold.woff2 ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-SemiBold.woff2";
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBoldItalic.eot":
+/*!***************************************!*\
+  !*** ./fonts/Muli-SemiBoldItalic.eot ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-SemiBoldItalic.eot";
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBoldItalic.svg":
+/*!***************************************!*\
+  !*** ./fonts/Muli-SemiBoldItalic.svg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <?xml version=\"1.0\" standalone=\"no\"?>\n| <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\" >\n| <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\">");
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBoldItalic.ttf":
+/*!***************************************!*\
+  !*** ./fonts/Muli-SemiBoldItalic.ttf ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-SemiBoldItalic.ttf";
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBoldItalic.woff":
+/*!****************************************!*\
+  !*** ./fonts/Muli-SemiBoldItalic.woff ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-SemiBoldItalic.woff";
+
+/***/ }),
+
+/***/ "./fonts/Muli-SemiBoldItalic.woff2":
+/*!*****************************************!*\
+  !*** ./fonts/Muli-SemiBoldItalic.woff2 ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "fonts/Muli-SemiBoldItalic.woff2";
 
 /***/ }),
 
@@ -212,82 +597,83 @@ var AddItem = function (_React$Component) {
         };
 
         _this.handleClick = function () {
-            if (typeof _this.props.post === 'function') {
+            if (typeof _this.props.post === "function") {
                 _this.props.post(_this.state.newDate, _this.state.newTitle, _this.state.newDescription);
             }
             _this.setState({
-                newDate: '',
-                newTitle: '',
-                newDescription: ''
+                newDate: "",
+                newTitle: "",
+                newDescription: ""
             });
         };
 
-        _this.keyPress = function (event) {
-            if (event.charCode > 46 && event.charCode < 58 || event.charCode > 95 && event.chatCode < 106) {
-                console.log(event.charCode);
-            } else {
-                event.preventDefault();
-            }
-        };
-
         _this.state = {
-            newDate: '',
-            newTitle: '',
-            newDescription: ''
+            newDate: "",
+            newTitle: "",
+            newDescription: ""
         };
         return _this;
     }
 
     _createClass(AddItem, [{
-        key: 'render',
+        key: "render",
+
+
+        // keyPress = (event) => {
+        //     if (event.charCode > 46 && event.charCode < 58 || event.charCode > 95 && event.chatCode < 106) {
+        //     } else {
+        //         event.preventDefault();
+        //     }
+        // }
+
         value: function render() {
             return _react2.default.createElement(
-                'form',
-                { className: 'main-form row' },
+                "form",
+                { className: "main-form row" },
                 _react2.default.createElement(
-                    'div',
-                    { className: 'input-group col-sm-12' },
+                    "div",
+                    { className: "input-group col" },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'input-group-prepend col-sm-12' },
+                        "div",
+                        { className: "input-group-prepend col-12" },
                         _react2.default.createElement(
-                            'label',
-                            { 'for': 'date', className: 'input-group-text col-sm-2 mb-3' },
-                            'Date: '
+                            "label",
+                            { "for": "date", className: "input-group-text col-sm-2 mb-3" },
+                            "Date: "
                         ),
-                        _react2.default.createElement('input', { id: 'date', className: 'form-control col-sm-10 mb-3', placeholder: '01/04/2018', value: this.state.newDate, onChange: this.handleChangeDate, onKeyPress: this.keyPress })
+                        _react2.default.createElement("input", { id: "date", type: "date", className: "form-control col-sm-10 mb-3", placeholder: "01/04/2018", value: this.state.newDate, onChange: this.handleChangeDate, onKeyPress: this.keyPress })
                     )
                 ),
                 _react2.default.createElement(
-                    'div',
-                    { className: 'input-group col-sm-12' },
+                    "div",
+                    { className: "input-group col-sm-12" },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'input-group-prepend col-sm-12' },
+                        "div",
+                        { className: "input-group-prepend col-sm-12" },
                         _react2.default.createElement(
-                            'label',
-                            { 'for': 'title', className: 'input-group-text col-sm-2 mb-3' },
-                            'Title: '
+                            "label",
+                            { "for": "title", className: "input-group-text col-sm-2 mb-3" },
+                            "Title: "
                         ),
-                        _react2.default.createElement('input', { id: 'title', className: 'form-control col-sm-10 mb-3', value: this.state.newTitle, onChange: this.handleChangeTitle })
+                        _react2.default.createElement("input", { id: "title", className: "form-control col-sm-10 mb-3", value: this.state.newTitle, onChange: this.handleChangeTitle })
                     )
                 ),
                 _react2.default.createElement(
-                    'div',
-                    { className: 'input-group col-sm-12' },
+                    "div",
+                    { className: "input-group col-sm-12" },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'input-group-prepend col-sm-12' },
+                        "div",
+                        { className: "input-group-prepend col-sm-12" },
                         _react2.default.createElement(
-                            'label',
-                            { 'for': 'description', className: 'input-group-text col-sm-2 mb-3' },
-                            'Details: '
+                            "label",
+                            { "for": "description", className: "input-group-text col-sm-2 mb-3" },
+                            "Details: "
                         ),
-                        _react2.default.createElement('textarea', { id: 'description', className: 'form-control col-sm-8 mb-3', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription, onChange: this.handleChangeDescription }),
+                        _react2.default.createElement("textarea", { id: "description", className: "form-control col-sm-8 mb-3", "aria-label": "With textarea", maxLength: "160", cols: "100", rows: "2", value: this.state.newDescription, onChange: this.handleChangeDescription }),
                         _react2.default.createElement(
-                            'button',
-                            { className: 'btn-add btn btn-outline-secondary col-sm-2 mb-3', type: 'button', onClick: this.handleClick },
-                            'Add'
+                            "button",
+                            { className: "btn-add btn btn-outline-secondary col-sm-2 mb-3", type: "button", onClick: this.handleClick },
+                            "Add"
                         )
                     )
                 )
@@ -348,17 +734,17 @@ var List = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).call(this, props));
 
         _this.handleClickMod = function (event) {
-            var inputDate = document.querySelector('.input-date').value;
-            var inputTitle = document.querySelector('.input-title').value;
-            var inputDescr = document.querySelector('.input-descr').value;
+            var inputDate = document.querySelector(".input-date").value;
+            var inputTitle = document.querySelector(".input-title").value;
+            var inputDescr = document.querySelector(".input-descr").value;
             var elementId = event.currentTarget.parentElement.parentElement;
-            var elementsTasks = document.querySelectorAll('.single-element');
+            var elementsTasks = document.querySelectorAll(".single-element");
             var elId = void 0;
 
             elementsTasks.forEach(function (element) {
 
                 if (element.querySelector('.element-description')) {
-                    elId = element.querySelector('.element-description').parentElement.parentElement.parentElement.getAttribute('id');
+                    elId = element.querySelector(".element-description").parentElement.parentElement.parentElement.getAttribute("id");
                 }
             });
 
@@ -368,7 +754,7 @@ var List = function (_React$Component) {
                 description: inputDescr,
                 id: elId
             };
-            console.log(changeItem);
+
             var allState = [].concat(_toConsumableArray(_this.state.mainData));
             var counter = 0;
             var oldElement = void 0;
@@ -378,24 +764,25 @@ var List = function (_React$Component) {
                     return;
                 }
             });
+
             allState[oldElement] = changeItem;
 
             _this.setState({
                 mainData: allState,
-                modifyArea: false
+                modifyArea: false,
+                currentModify: false
             });
 
             fetch('http://localhost:3000/tasks/' + elId, {
-                method: 'PUT',
+                method: "PUT",
                 body: JSON.stringify(changeItem),
                 headers: new Headers({
-                    'Content-Type': 'application/json'
+                    "Content-Type": "application/json"
                 })
             }).then(function (resp) {
-                // console.log(resp);
                 return resp.json();
             }).then(function (data) {}).catch(function (err) {
-                console.log('Błąd!', err);
+                console.log("Błąd!", err);
             });
         };
 
@@ -429,7 +816,7 @@ var List = function (_React$Component) {
                     throw new Error('Błąd sieci!');
                 }
             }).then(function (data) {
-                console.log(data);
+
                 _this2.setState({
                     mainData: data
                 });
@@ -449,10 +836,10 @@ var List = function (_React$Component) {
             };
 
             fetch('http://localhost:3000/tasks/', {
-                method: 'POST',
+                method: "POST",
                 body: JSON.stringify(newItem),
                 headers: new Headers({
-                    'Content-Type': 'application/json'
+                    "Content-Type": "application/json"
                 })
             }).then(function (resp) {
                 console.log(resp);
@@ -465,7 +852,7 @@ var List = function (_React$Component) {
                     mainData: newData
                 });
             }).catch(function (err) {
-                console.log('Błąd!', err);
+                console.log("Błąd!", err);
             });
         }
     }, {
@@ -473,12 +860,10 @@ var List = function (_React$Component) {
         value: function deleteItem(item) {
             var _this4 = this;
 
-            console.log(item);
-
             fetch('http://localhost:3000/tasks/' + item.id, {
-                method: 'DELETE',
+                method: "DELETE",
                 headers: new Headers({
-                    'Content-Type': 'application/json'
+                    "Content-Type": "application/json"
                 })
             }).then(function (resp) {
                 console.log(resp);
@@ -495,7 +880,7 @@ var List = function (_React$Component) {
                     mainData: newData
                 });
             }).catch(function (err) {
-                console.log('Błąd!', err);
+                console.log("Błąd!", err);
             });
 
             var newDeleteData = this.state.deleteData;
@@ -509,9 +894,9 @@ var List = function (_React$Component) {
         value: function modifyItem(item) {
 
             setTimeout(function () {
-                var inputDate = document.querySelector('.input-date');
-                var inputTitle = document.querySelector('.input-title');
-                var inputDescr = document.querySelector('.input-descr');
+                var inputDate = document.querySelector(".input-date");
+                var inputTitle = document.querySelector(".input-title");
+                var inputDescr = document.querySelector(".input-descr");
 
                 inputDate.value = item.date;
                 inputTitle.value = item.title;
@@ -521,7 +906,8 @@ var List = function (_React$Component) {
             var itemChange = item;
             this.setState({
                 modifyArea: true,
-                thisItem: itemChange
+                thisItem: itemChange,
+                currentModify: item.id
             });
         }
     }, {
@@ -530,7 +916,7 @@ var List = function (_React$Component) {
             var _this5 = this;
 
             var list = this.state.mainData.map(function (el) {
-                return _react2.default.createElement(_listItem.ListItem, { item: el, 'delete': _this5.deleteItem, modify: _this5.modifyItem });
+                return _react2.default.createElement(_listItem.ListItem, { currentModify: _this5.state.currentModify, item: el, 'delete': _this5.deleteItem, modify: _this5.modifyItem });
             });
 
             var list2 = this.state.deleteData.map(function (el) {
@@ -563,15 +949,11 @@ var List = function (_React$Component) {
                     { className: 'row lists' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'col-sm-4 to-do-list' },
+                        { className: 'col-sm-4 to-do-list justify-content-center text-center' },
                         _react2.default.createElement(
-                            'div',
-                            { className: 'row justify-content-sm-center' },
-                            _react2.default.createElement(
-                                'h4',
-                                null,
-                                'New tasks'
-                            )
+                            'h4',
+                            null,
+                            'New tasks'
                         ),
                         _react2.default.createElement(
                             'div',
@@ -581,7 +963,7 @@ var List = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'input-group col-sm-4' },
+                        { className: 'input-group col-sm-4 change-form' },
                         this.state.modifyArea && _react2.default.createElement(
                             'form',
                             null,
@@ -590,7 +972,7 @@ var List = function (_React$Component) {
                                 { className: 'input-group' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'col-sm-12 justify-content-center' },
+                                    { className: 'col-sm-12 justify-content-center align-self-center' },
                                     _react2.default.createElement(
                                         'label',
                                         { 'for': 'change-date', className: 'input-group-text col-sm-12' },
@@ -600,7 +982,7 @@ var List = function (_React$Component) {
                                 _react2.default.createElement(
                                     'div',
                                     { className: 'col-sm-12' },
-                                    _react2.default.createElement('input', { id: 'change-date', className: 'form-control col-sm-12 mb-4 input-date', value: this.state.modDate, onChange: this.handleModDate })
+                                    _react2.default.createElement('input', { id: 'change-date', type: 'date', className: 'form-control col-sm-12 mb-3 input-date', value: this.state.modDate })
                                 )
                             ),
                             _react2.default.createElement(
@@ -618,7 +1000,7 @@ var List = function (_React$Component) {
                                 _react2.default.createElement(
                                     'div',
                                     { className: 'col-sm-12' },
-                                    _react2.default.createElement('input', { id: 'change-title', className: 'form-control col-sm-12 mb-4 input-title', value: this.state.modTitle, onChange: this.handleModTitle })
+                                    _react2.default.createElement('input', { id: 'change-title', className: 'form-control col-sm-12 mb-3 input-title', value: this.state.modTitle })
                                 )
                             ),
                             _react2.default.createElement(
@@ -636,7 +1018,7 @@ var List = function (_React$Component) {
                                 _react2.default.createElement(
                                     'div',
                                     { className: 'col-sm-12' },
-                                    _react2.default.createElement('textarea', { id: 'change-description', className: 'form-control col-sm-12 mb-4 input-descr', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '3', value: this.state.newDescription, onChange: this.handleChangeDescription })
+                                    _react2.default.createElement('textarea', { id: 'change-description', className: 'form-control col-sm-12 mb-3 input-descr', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription })
                                 ),
                                 _react2.default.createElement(
                                     'div',
@@ -654,15 +1036,11 @@ var List = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'col-sm-4 completed-tasks' },
+                        { className: 'col-sm-4 completed-tasks justify-content-center text-center' },
                         _react2.default.createElement(
-                            'div',
-                            { className: 'row justify-content-sm-center' },
-                            _react2.default.createElement(
-                                'h4',
-                                null,
-                                'Completed tasks'
-                            )
+                            'h4',
+                            null,
+                            'Completed tasks'
                         ),
                         _react2.default.createElement(
                             'div',
@@ -679,8 +1057,6 @@ var List = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.List = List;
-
-// data-id = item-id; -> przypisać do inputa
 
 /***/ }),
 
@@ -734,7 +1110,7 @@ var ListItem = function (_React$Component) {
         };
 
         _this.hadleClickCompleted = function (e, item) {
-            if (typeof _this.props.delete === 'function') {
+            if (typeof _this.props.delete === "function") {
                 _this.props.delete(item);
             }
             _this.setState({
@@ -743,9 +1119,12 @@ var ListItem = function (_React$Component) {
         };
 
         _this.hadleClickModify = function (e, item) {
-            if (typeof _this.props.modify === 'function') {
+            if (typeof _this.props.modify === "function") {
                 _this.props.modify(item);
             }
+            _this.setState({
+                show: false
+            });
         };
 
         _this.state = {
@@ -755,62 +1134,62 @@ var ListItem = function (_React$Component) {
     }
 
     _createClass(ListItem, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             var _this2 = this;
 
             return _react2.default.createElement(
-                'div',
-                { key: this.props.item.id, id: this.props.item.id, className: 'list-element single-element ' },
+                "div",
+                { key: this.props.item.id, id: this.props.item.id, className: "list-element single-element " },
                 _react2.default.createElement(
-                    'div',
-                    { onClick: this.handleClickTitle },
+                    "div",
+                    { onClick: this.handleClickTitle, style: { fontWeight: this.props.currentModify === this.props.item.id ? 'bold' : 'normal' } },
                     _react2.default.createElement(
-                        'span',
+                        "span",
                         null,
                         this.props.item.date,
-                        ': '
+                        ": "
                     ),
                     _react2.default.createElement(
-                        'span',
+                        "span",
                         null,
-                        ' ',
+                        " ",
                         this.props.item.title
                     )
                 ),
                 _react2.default.createElement(
-                    'div',
+                    "div",
                     null,
                     this.state.show && _react2.default.createElement(
-                        'div',
+                        "div",
                         null,
                         _react2.default.createElement(
-                            'p',
-                            { className: 'list-element element-description' },
-                            'details: ',
+                            "p",
+                            { className: "list-element element-description" },
+                            "details: ",
                             this.props.item.description
                         ),
                         _react2.default.createElement(
-                            'div',
-                            { className: 'btn-options' },
+                            "div",
+                            { className: "btn-options" },
                             _react2.default.createElement(
-                                'button',
+                                "button",
                                 { onClick: function onClick(e) {
                                         return _this2.hadleClickModify(e, _this2.props.item);
                                     } },
-                                'to modify'
+                                "to modify"
                             ),
                             _react2.default.createElement(
-                                'button',
+                                "button",
                                 { onClick: function onClick(e) {
                                         return _this2.hadleClickCompleted(e, _this2.props.item);
                                     } },
-                                'completed'
+                                "completed"
                             ),
                             _react2.default.createElement(
-                                'button',
+                                "button",
                                 { onClick: this.handleClickHide },
-                                'hide'
+                                "hide"
                             )
                         )
                     )
@@ -958,7 +1337,7 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, "@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"..//Muli-BoldItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n    src: url(" + escape(__webpack_require__(/*! ../fonts/Muli-BoldItalic.eot */ "./fonts/Muli-BoldItalic.eot")) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(/*! ../fonts/Muli-BoldItalic.woff2 */ "./fonts/Muli-BoldItalic.woff2")) + ") format('woff2'),\n        url(" + escape(__webpack_require__(/*! ../fonts/Muli-BoldItalic.woff */ "./fonts/Muli-BoldItalic.woff")) + ") format('woff'),\n        url(" + escape(__webpack_require__(/*! ../fonts/Muli-BoldItalic.ttf */ "./fonts/Muli-BoldItalic.ttf")) + ") format('truetype'),\n        url(" + escape(__webpack_require__(/*! ../fonts/Muli-BoldItalic.svg */ "./fonts/Muli-BoldItalic.svg")) + "#Muli-BoldItalic) format('svg');\n    font-weight: bold;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Black.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Black.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Black.woff2\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff2'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Black.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Black.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('truetype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Black.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "#Muli-Black) format('svg');\n    font-weight: 900;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBold.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBold.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBold.woff2\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff2'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBold.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBold.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('truetype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBold.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "#Muli-SemiBold) format('svg');\n    font-weight: 600;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBoldItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBoldItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBoldItalic.woff2\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff2'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBoldItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBoldItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('truetype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBoldItalic.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "#Muli-SemiBoldItalic) format('svg');\n    font-weight: 600;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-ExtraLightItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-ExtraLightItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-ExtraLightItalic.woff2\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff2'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-ExtraLightItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-ExtraLightItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('truetype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-ExtraLightItalic.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "#Muli-ExtraLightItalic) format('svg');\n    font-weight: 200;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Regular.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Regular.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Regular.woff2\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff2'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Regular.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Regular.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('truetype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Regular.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "#Muli-Regular) format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Italic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Italic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Italic.woff2\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff2'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Italic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Italic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('truetype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Italic.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "#Muli-Italic) format('svg');\n    font-weight: normal;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Bold.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Bold.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Bold.woff2\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff2'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Bold.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('woff'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Bold.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format('truetype'),\n        url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-Bold.svg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "#Muli-Bold) format('svg');\n    font-weight: bold;\n    font-style: normal;\n}\n\n\nbody {\n    font-family: \"Muli\", sans-serif;\n    font-weight: normal;\n    color: #424147;\n}\n\n.headline {\n    height: 5rem;\n    border: 2px solid #a29fa6;\n    margin-top: 2rem;\n    margin-bottom: 6rem;\n}\n\nh1 {\n    color:#424147;\n    text-shadow: 0.3rem 0.2rem 0.8rem #a29fa6;\n    font-size: 4rem;\n}\n\nh4 {\n    color: #424147;\n    padding: 1rem;\n    text-decoration: underline;\n    text-align: center;\n}\n\n.main-form {\n    margin-bottom: 6rem;\n}\n\n.main-form label,\n.lists label,\n.btn-add,\n.btn-modify {\n    font-family: \"Muli\", sans-serif;\n    font-weight: 600;\n}\n\n.lists {\n    margin-bottom: 6rem;\n}\n\n.to-do-list,\n.completed-tasks {\n    border: 2px solid #a29fa6;\n    /* height: 24.5rem; */\n    /* background-color: #d2d4dc; */\n}\n\n.list-element {\n    text-align: center;\n    padding-bottom: 1rem;\n}\n\n.list-element:nth-child(2n+1) {\n    color: \t#4f5b66;\n}\n\n.element-description {\n    font-family: \"Muli\", sans-serif;\n    font-style: italic;\n    font-weight: normal;\n}\n\n.input-group,\n.input-group-prepend {\n    padding: 0;\n}\n\n.form-control {\n    border: 2px solid #a29fa6;\n}\n\n.input-group-text,\n.btn-add,\n.btn-modify,\n.btn-options button {\n    border: 2px solid #a29fa6;\n    background-color: lightgrey;\n    color: #424147;\n}\n\n.btn-modify {\n    padding: 0.1rem 0;\n\n}\n\n.btn-options button {\n    margin: 0 0.1rem;\n    width: 5.4rem;\n}\n", ""]);
+exports.push([module.i, "@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-BoldItalic.eot */ "./fonts/Muli-BoldItalic.eot")) + ");\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-BoldItalic.eot */ "./fonts/Muli-BoldItalic.eot")) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-BoldItalic.woff2 */ "./fonts/Muli-BoldItalic.woff2")) + ") format('woff2'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-BoldItalic.woff */ "./fonts/Muli-BoldItalic.woff")) + ") format('woff'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-BoldItalic.ttf */ "./fonts/Muli-BoldItalic.ttf")) + ") format('truetype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-BoldItalic.svg */ "./fonts/Muli-BoldItalic.svg")) + "#Muli-BoldItalic) format('svg');\n    font-weight: bold;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Black.eot */ "./fonts/Muli-Black.eot")) + ");\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./..fonts//Muli-Black.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Black.woff2 */ "./fonts/Muli-Black.woff2")) + ") format('woff2'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Black.woff */ "./fonts/Muli-Black.woff")) + ") format('woff'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Black.ttf */ "./fonts/Muli-Black.ttf")) + ") format('truetype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Black.svg */ "./fonts/Muli-Black.svg")) + "#Muli-Black) format('svg');\n    font-weight: 900;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-SemiBold.eot */ "./fonts/Muli-SemiBold.eot")) + ");\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-SemiBold.eot */ "./fonts/Muli-SemiBold.eot")) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-SemiBold.woff2 */ "./fonts/Muli-SemiBold.woff2")) + ") format('woff2'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-SemiBold.woff */ "./fonts/Muli-SemiBold.woff")) + ") format('woff'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-SemiBold.ttf */ "./fonts/Muli-SemiBold.ttf")) + ") format('truetype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-SemiBold.svg */ "./fonts/Muli-SemiBold.svg")) + "#Muli-SemiBold) format('svg');\n    font-weight: 600;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(/*! ../fonts/Muli-SemiBoldItalic.eot */ "./fonts/Muli-SemiBoldItalic.eot")) + ");\n    src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../Muli-SemiBoldItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(/*! ../fonts/Muli-SemiBoldItalic.woff2 */ "./fonts/Muli-SemiBoldItalic.woff2")) + ") format('woff2'),\n        url(" + escape(__webpack_require__(/*! ../fonts/Muli-SemiBoldItalic.woff */ "./fonts/Muli-SemiBoldItalic.woff")) + ") format('woff'),\n        url(" + escape(__webpack_require__(/*! ../fonts/Muli-SemiBoldItalic.ttf */ "./fonts/Muli-SemiBoldItalic.ttf")) + ") format('truetype'),\n        url(" + escape(__webpack_require__(/*! ../fonts/Muli-SemiBoldItalic.svg */ "./fonts/Muli-SemiBoldItalic.svg")) + "#Muli-SemiBoldItalic) format('svg');\n    font-weight: 600;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-ExtraLightItalic.eot */ "./fonts/Muli-ExtraLightItalic.eot")) + ");\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-ExtraLightItalic.eot */ "./fonts/Muli-ExtraLightItalic.eot")) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-ExtraLightItalic.woff2 */ "./fonts/Muli-ExtraLightItalic.woff2")) + ") format('woff2'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-ExtraLightItalic.woff */ "./fonts/Muli-ExtraLightItalic.woff")) + ") format('woff'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-ExtraLightItalic.ttf */ "./fonts/Muli-ExtraLightItalic.ttf")) + ") format('truetype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-ExtraLightItalic.svg */ "./fonts/Muli-ExtraLightItalic.svg")) + "#Muli-ExtraLightItalic) format('svg');\n    font-weight: 200;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Regular.eot */ "./fonts/Muli-Regular.eot")) + ");\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Regular.eot */ "./fonts/Muli-Regular.eot")) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Regular.woff2 */ "./fonts/Muli-Regular.woff2")) + ") format('woff2'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Regular.woff */ "./fonts/Muli-Regular.woff")) + ") format('woff'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Regular.ttf */ "./fonts/Muli-Regular.ttf")) + ") format('truetype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Regular.svg */ "./fonts/Muli-Regular.svg")) + "#Muli-Regular) format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Italic.eot */ "./fonts/Muli-Italic.eot")) + ");\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Italic.eot */ "./fonts/Muli-Italic.eot")) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Italic.woff2 */ "./fonts/Muli-Italic.woff2")) + ") format('woff2'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Italic.woff */ "./fonts/Muli-Italic.woff")) + ") format('woff'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Italic.ttf */ "./fonts/Muli-Italic.ttf")) + ") format('truetype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Italic.svg */ "./fonts/Muli-Italic.svg")) + "#Muli-Italic) format('svg');\n    font-weight: normal;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Muli';\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Bold.eot */ "./fonts/Muli-Bold.eot")) + ");\n    src: url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Bold.eot */ "./fonts/Muli-Bold.eot")) + "?#iefix) format('embedded-opentype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Bold.woff2 */ "./fonts/Muli-Bold.woff2")) + ") format('woff2'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Bold.woff */ "./fonts/Muli-Bold.woff")) + ") format('woff'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Bold.ttf */ "./fonts/Muli-Bold.ttf")) + ") format('truetype'),\n        url(" + escape(__webpack_require__(/*! ./../fonts/Muli-Bold.svg */ "./fonts/Muli-Bold.svg")) + "#Muli-Bold) format('svg');\n    font-weight: bold;\n    font-style: normal;\n}\n\n\nbody {\n    font-family: \"Muli\", sans-serif;\n    font-weight: normal;\n    color: #424147;\n}\n\n.headline {\n    height: 5rem;\n    border: 2px solid #a29fa6;\n    margin-top: 2rem;\n    margin-bottom: 6rem;\n}\n\nh1 {\n    color:#424147;\n    text-shadow: 0.3rem 0.2rem 0.8rem #a29fa6;\n    font-size: 4rem;\n}\n\nh4 {\n    color: #424147;\n    padding: 1rem;\n    text-decoration: underline;\n}\n\n.main-form {\n    margin-bottom: 6rem;\n}\n\n.main-form label,\n.lists label,\n.btn-add,\n.btn-modify {\n    font-family: \"Muli\", sans-serif;\n    font-weight: 600;\n}\n\n.lists {\n    margin-bottom: 6rem;\n}\n\n.to-do-list,\n.completed-tasks {\n    border: 2px solid #a29fa6;\n    margin-bottom: 2rem;\n}\n\n.change-form {\n    margin-bottom: 2rem;\n}\n\n.list-element {\n    text-align: center;\n    padding-bottom: 1rem;\n}\n\n.list-element:nth-child(2n+1) {\n    color: \t#4f5b66;\n}\n\n.element-description {\n    font-family: \"Muli\", sans-serif;\n    font-style: italic;\n    font-weight: normal;\n}\n\n.input-group,\n.input-group-prepend {\n    padding: 0;\n}\n\n.form-control {\n    border: 2px solid #a29fa6;\n}\n\n.input-group-text,\n.btn-add,\n.btn-modify,\n.btn-options button {\n    border: 2px solid #a29fa6;\n    background-color: lightgrey;\n    color: #424147;\n}\n\n.btn-modify {\n    padding: 0.3rem;\n\n}\n\n.btn-options button {\n    margin: 0.1rem 0.1rem;\n    padding: 0 0.1rem;\n    width: 5.5rem;\n    text-align: center;\n}\n", ""]);
 
 // exports
 

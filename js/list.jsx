@@ -32,7 +32,7 @@ class List extends React.Component {
             }
         })
         .then(data => {
-        console.log(data);
+
             this.setState({
                 mainData: data
             })
@@ -50,12 +50,11 @@ class List extends React.Component {
             description: description
         }
 
-
             fetch('http://localhost:3000/tasks/', {
-                method: 'POST',
+                method: "POST",
                 body: JSON.stringify(newItem),
                 headers: new Headers({
-                    'Content-Type': 'application/json'
+                    "Content-Type": "application/json"
                 })
             })
             .then(resp => {
@@ -71,18 +70,17 @@ class List extends React.Component {
                 })
             })
             .catch(err => {
-                console.log('Błąd!', err);
+                console.log("Błąd!", err);
             });
 
     }
 
     deleteItem (item) {
-        console.log(item);
 
         fetch(`http://localhost:3000/tasks/${item.id}`, {
-            method: 'DELETE',
+            method: "DELETE",
             headers: new Headers({
-                'Content-Type': 'application/json'
+                "Content-Type": "application/json"
             })
         })
         .then(resp => {
@@ -102,7 +100,7 @@ class List extends React.Component {
             })
         })
         .catch(err => {
-            console.log('Błąd!', err);
+            console.log("Błąd!", err);
         });
 
         let newDeleteData = this.state.deleteData;
@@ -113,19 +111,19 @@ class List extends React.Component {
     }
 
     handleClickMod = (event) => {
-        const inputDate = document.querySelector('.input-date').value;
-        const inputTitle = document.querySelector('.input-title').value;
-        const inputDescr = document.querySelector('.input-descr').value;
+        const inputDate = document.querySelector(".input-date").value;
+        const inputTitle = document.querySelector(".input-title").value;
+        const inputDescr = document.querySelector(".input-descr").value;
         const elementId = event.currentTarget.parentElement.parentElement;
-        const elementsTasks = document.querySelectorAll('.single-element');
+        const elementsTasks = document.querySelectorAll(".single-element");
         let elId;
 
         elementsTasks.forEach((element) => {
 
-            if (element.querySelector('.element-description')){
-                elId = element.querySelector('.element-description').parentElement.parentElement.parentElement.getAttribute('id');
+            if (element.querySelector('.element-description')) {
+                elId = element.querySelector(".element-description").parentElement.parentElement.parentElement.getAttribute("id");
             }
-        });
+        })
 
         const changeItem = {
             date: inputDate,
@@ -133,7 +131,7 @@ class List extends React.Component {
             description: inputDescr,
             id: elId
         }
-        console.log(changeItem);
+
         const allState = [...this.state.mainData];
         let counter = 0;
         let oldElement;
@@ -142,39 +140,40 @@ class List extends React.Component {
                 oldElement = index;
                 return;
             }
-        });
+        })
+
         allState[oldElement] = changeItem;
 
         this.setState({
             mainData: allState,
-            modifyArea: false
-        });
+            modifyArea: false,
+            currentModify: false
+        })
 
         fetch(`http://localhost:3000/tasks/${elId}`, {
-            method: 'PUT',
+            method: "PUT",
             body: JSON.stringify(changeItem),
             headers: new Headers({
-                'Content-Type': 'application/json'
+                "Content-Type": "application/json"
             })
         })
         .then(resp => {
-            // console.log(resp);
             return resp.json();
         })
         .then(data=> {
         })
 
         .catch(err => {
-            console.log('Błąd!', err);
+            console.log("Błąd!", err);
         });
     }
 
     modifyItem (item) {
 
         setTimeout (() => {
-            const inputDate = document.querySelector('.input-date');
-            const inputTitle = document.querySelector('.input-title');
-            const inputDescr = document.querySelector('.input-descr');
+            const inputDate = document.querySelector(".input-date");
+            const inputTitle = document.querySelector(".input-title");
+            const inputDescr = document.querySelector(".input-descr");
 
             inputDate.value = item.date;
             inputTitle.value = item.title;
@@ -184,14 +183,15 @@ class List extends React.Component {
         const itemChange = item;
         this.setState({
             modifyArea: true,
-            thisItem: itemChange
-        });
+            thisItem: itemChange,
+            currentModify: item.id
+        })
     }
 
     render() {
 
         let list = this.state.mainData.map(el => {
-            return <ListItem item = {el} delete = {this.deleteItem} modify = {this.modifyItem}/>
+            return <ListItem currentModify = {this.state.currentModify} item = {el} delete = {this.deleteItem} modify = {this.modifyItem}/>
         })
 
         let list2 = this.state.deleteData.map(el => {
@@ -209,22 +209,20 @@ class List extends React.Component {
                 </header>
                 <AddItem post = {this.postItem}/>
                 <div className = "row lists">
-                    <div className = "col-sm-4 to-do-list">
-                        <div className = "row justify-content-sm-center">
-                            <h4>New tasks</h4>
-                        </div>
+                    <div className = "col-sm-4 to-do-list justify-content-center text-center">
+                        <h4>New tasks</h4>
                         <div>
                             {list}
                         </div>
                     </div>
-                    <div className = "input-group col-sm-4">{this.state.modifyArea &&
+                    <div className = "input-group col-sm-4 change-form">{this.state.modifyArea &&
                         <form>
                             <div className = "input-group">
-                                <div className = "col-sm-12 justify-content-center">
+                                <div className = "col-sm-12 justify-content-center align-self-center">
                                     <label for = "change-date" className = "input-group-text col-sm-12">Date: </label>
                                 </div>
                                 <div className = "col-sm-12">
-                                    <input id = "change-date" className = "form-control col-sm-12 mb-4 input-date" value = {this.state.modDate} onChange = {this.handleModDate}></input>
+                                    <input id = "change-date" type = "date" className = "form-control col-sm-12 mb-3 input-date" value = {this.state.modDate}></input>
                                 </div>
                             </div>
                             <div className = "input-group">
@@ -232,7 +230,7 @@ class List extends React.Component {
                                     <label for = "change-title" className = "input-group-text col-sm-12">Title: </label>
                                 </div>
                                 <div className = "col-sm-12">
-                                    <input id = "change-title" className = "form-control col-sm-12 mb-4 input-title" value = {this.state.modTitle} onChange = {this.handleModTitle}></input>
+                                    <input id = "change-title" className = "form-control col-sm-12 mb-3 input-title" value = {this.state.modTitle}></input>
                                 </div>
                             </div>
                             <div className = "input-group">
@@ -240,7 +238,7 @@ class List extends React.Component {
                                     <label for = "change-description" className = "input-group-text col-sm-12">Details: </label>
                                 </div>
                                 <div className = "col-sm-12">
-                                    <textarea id = "change-description" className = "form-control col-sm-12 mb-4 input-descr" aria-label = "With textarea" maxLength = '160' cols = '100' rows = '3' value = {this.state.newDescription} onChange = {this.handleChangeDescription}></textarea>
+                                    <textarea id = "change-description" className = "form-control col-sm-12 mb-3 input-descr" aria-label = "With textarea" maxLength = "160" cols = "100" rows = "2" value = {this.state.newDescription}></textarea>
                                 </div>
                                 <div className = "col-sm-12">
                                     <button className = "btn-modify btn-outline-secondary col-sm-12" type = "button" onClick = {e => this.handleClickMod(e)}>Modify</button>
@@ -248,10 +246,8 @@ class List extends React.Component {
                             </div>
                         </form>}
                     </div>
-                    <div className = "col-sm-4 completed-tasks">
-                        <div className = "row justify-content-sm-center">
-                            <h4>Completed tasks</h4>
-                        </div>
+                    <div className = "col-sm-4 completed-tasks justify-content-center text-center">
+                        <h4>Completed tasks</h4>
                         <div>
                             {list2}
                         </div>
@@ -263,5 +259,3 @@ class List extends React.Component {
 }
 
 export { List };
-
-// data-id = item-id; -> przypisać do inputa

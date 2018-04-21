@@ -22,7 +22,7 @@ class ListItem extends React.Component {
     }
 
     hadleClickCompleted = (e, item) => {
-        if (typeof this.props.delete === 'function') {
+        if (typeof this.props.delete === "function") {
             this.props.delete(item);
         }
         this.setState({
@@ -31,15 +31,18 @@ class ListItem extends React.Component {
     }
 
     hadleClickModify = (e, item) => {
-        if (typeof this.props.modify === 'function') {
+        if (typeof this.props.modify === "function") {
             this.props.modify(item);
         }
+        this.setState({
+            show: false
+        })
     }
 
     render() {
         return (
-            <div key={this.props.item.id} id={this.props.item.id} className = "list-element single-element ">
-                <div onClick = {this.handleClickTitle}>
+            <div key = {this.props.item.id} id = {this.props.item.id} className = "list-element single-element ">
+                <div onClick = {this.handleClickTitle} style = {{fontWeight: this.props.currentModify === this.props.item.id ? 'bold' : 'normal'}}>
                     <span>{this.props.item.date}: </span>
                     <span> {this.props.item.title}</span>
                 </div>

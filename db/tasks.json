@@ -1,46 +1,22 @@
 {
   "tasks": [
     {
-      "date": "01/04/2018",
-      "title": "zakupy",
-      "description": "ciuchy",
-      "id": 1
-    },
-    {
-      "date": "01/04/2018",
-      "title": "sprzątanie",
-      "description": "cała chata",
-      "id": 2
-    },
-    {
-      "date": "01/04/2018",
-      "title": "urodziny Kasi",
-      "description": "kupić prezent",
-      "id": 3
-    },
-    {
-      "date": "02/04/2018",
-      "title": "przegląd samochodu",
-      "description": "zapytać o wymianę oleju",
-      "id": 4
-    },
-    {
-      "date": "02/04/2018",
-      "title": "kino",
-      "description": "potwierdzić termin",
-      "id": 5
-    },
-    {
       "date": "04/04/2018",
       "title": "ogarnąć majówkę",
       "description": "zarezerwować bilety",
       "id": 6
     },
     {
-      "date": "04/04/2018",
-      "title": "komunia Justyny",
-      "description": "kupić prezent",
+      "date": "",
+      "title": "przegląd samochodu",
+      "description": "zapytać o wymianę oleju",
       "id": 7
+    },
+    {
+      "date": "2018-04-12",
+      "title": "zakupy",
+      "description": "samochód",
+      "id": 8
     }
   ]
 }
