@@ -631,53 +631,52 @@ var AddItem = function (_React$Component) {
                 "form",
                 { className: "main-form row" },
                 _react2.default.createElement(
-                    "div",
-                    { className: "input-group col" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "input-group-prepend col-12" },
-                        _react2.default.createElement(
-                            "label",
-                            { "for": "date", className: "input-group-text col-sm-2 mb-3" },
-                            "Date: "
-                        ),
-                        _react2.default.createElement("input", { id: "date", type: "date", className: "form-control col-sm-10 mb-3", placeholder: "01/04/2018", value: this.state.newDate, onChange: this.handleChangeDate, onKeyPress: this.keyPress })
-                    )
+                    "label",
+                    { "for": "date", className: "input-group-text col-md-2 col-sm-12 mb-3" },
+                    "Date: "
                 ),
+                _react2.default.createElement("input", { id: "date", type: "date", className: "form-control col-md-10 col-sm-12 mb-3", value: this.state.newDate, onChange: this.handleChangeDate, onKeyPress: this.keyPress }),
                 _react2.default.createElement(
-                    "div",
-                    { className: "input-group col-sm-12" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "input-group-prepend col-sm-12" },
-                        _react2.default.createElement(
-                            "label",
-                            { "for": "title", className: "input-group-text col-sm-2 mb-3" },
-                            "Title: "
-                        ),
-                        _react2.default.createElement("input", { id: "title", className: "form-control col-sm-10 mb-3", value: this.state.newTitle, onChange: this.handleChangeTitle })
-                    )
+                    "label",
+                    { "for": "title", className: "input-group-text col-md-2 col-sm-12 mb-3" },
+                    "Title: "
                 ),
+                _react2.default.createElement("input", { id: "title", className: "form-control col-md-10 col-sm-12 mb-3", value: this.state.newTitle, onChange: this.handleChangeTitle }),
                 _react2.default.createElement(
-                    "div",
-                    { className: "input-group col-sm-12" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "input-group-prepend col-sm-12" },
-                        _react2.default.createElement(
-                            "label",
-                            { "for": "description", className: "input-group-text col-sm-2 mb-3" },
-                            "Details: "
-                        ),
-                        _react2.default.createElement("textarea", { id: "description", className: "form-control col-sm-8 mb-3", "aria-label": "With textarea", maxLength: "160", cols: "100", rows: "2", value: this.state.newDescription, onChange: this.handleChangeDescription }),
-                        _react2.default.createElement(
-                            "button",
-                            { className: "btn-add btn btn-outline-secondary col-sm-2 mb-3", type: "button", onClick: this.handleClick },
-                            "Add"
-                        )
-                    )
+                    "label",
+                    { "for": "description", className: "input-group-text col-md-2 col-sm-12 mb-3" },
+                    "Details: "
+                ),
+                _react2.default.createElement("textarea", { id: "description", className: "form-control col-md-8 col-sm-12 mb-3", "aria-label": "With textarea", maxLength: "160", cols: "100", rows: "2", value: this.state.newDescription, onChange: this.handleChangeDescription }),
+                _react2.default.createElement(
+                    "button",
+                    { className: "btn-add btn btn-outline-secondary col-md-2 col-sm-12 mb-3", type: "button", onClick: this.handleClick },
+                    "Add"
                 )
-            );
+            )
+            // <form className = "main-form row">
+            //     <div className = "input-group col-sm-12">
+            //         <div className = "input-group-prepend col-sm-12">
+            //             <label for = "date" className = "input-group-text col-sm-2 mb-3">Date: </label>
+            //             <input id = "date" type = "date" className = "form-control col-sm-10 mb-3" placeholder = "01/04/2018" value = {this.state.newDate} onChange = {this.handleChangeDate} onKeyPress = {this.keyPress}></input>
+            //         </div>
+            //     </div>
+            //     <div className = "input-group col-sm-12">
+            //         <div className = "input-group-prepend col-sm-12">
+            //             <label for = "title" className = "input-group-text col-sm-2 mb-3">Title: </label>
+            //             <input id = "title" className = "form-control col-sm-10 mb-3" value = {this.state.newTitle} onChange = {this.handleChangeTitle}></input>
+            //         </div>
+            //     </div>
+            //     <div className = "input-group col-sm-12">
+            //         <div className = "input-group-prepend col-sm-12">
+            //             <label for = "description" className = "input-group-text col-sm-2 mb-3">Details: </label>
+            //             <textarea id = "description" className = "form-control col-sm-8 mb-3" aria-label = "With textarea" maxLength = '160' cols = '100' rows = '2' value = {this.state.newDescription} onChange = {this.handleChangeDescription}></textarea>
+            //             <button className = "btn-add btn btn-outline-secondary col-sm-2 mb-3" type = "button" onClick = {this.handleClick}>Add</button>
+            //         </div>
+            //     </div>
+            //     {/* <div><h6 style = {{color: "red"}}>{this.state.info}</h6></div> */}
+            // </form>
+            ;
         }
     }]);
 
@@ -741,12 +740,7 @@ var List = function (_React$Component) {
             var elementsTasks = document.querySelectorAll(".single-element");
             var elId = void 0;
 
-            elementsTasks.forEach(function (element) {
-
-                if (element.querySelector('.element-description')) {
-                    elId = element.querySelector(".element-description").parentElement.parentElement.parentElement.getAttribute("id");
-                }
-            });
+            elId = _this.state.currentModify;
 
             var changeItem = {
                 date: inputDate,
@@ -756,7 +750,6 @@ var List = function (_React$Component) {
             };
 
             var allState = [].concat(_toConsumableArray(_this.state.mainData));
-            var counter = 0;
             var oldElement = void 0;
             allState.forEach(function (element, index) {
                 if (element.id == elId) {
@@ -781,7 +774,9 @@ var List = function (_React$Component) {
                 })
             }).then(function (resp) {
                 return resp.json();
-            }).then(function (data) {}).catch(function (err) {
+            }).then(function (data) {
+                console.log(data);
+            }).catch(function (err) {
                 console.log("Błąd!", err);
             });
         };
@@ -875,7 +870,6 @@ var List = function (_React$Component) {
                     return el.id !== item.id;
                 });
 
-                console.log(newData);
                 _this4.setState({
                     mainData: newData
                 });
@@ -931,7 +925,7 @@ var List = function (_React$Component) {
                     { className: 'row' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'headline col-sm-12' },
+                        { className: 'headline col' },
                         _react2.default.createElement(
                             'div',
                             null,
@@ -949,7 +943,7 @@ var List = function (_React$Component) {
                     { className: 'row lists' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'col-sm-4 to-do-list justify-content-center text-center' },
+                        { className: 'col-md-4 col-sm-12 to-do-list justify-content-center text-center' },
                         _react2.default.createElement(
                             'h4',
                             null,
@@ -963,7 +957,7 @@ var List = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'input-group col-sm-4 change-form' },
+                        { className: 'input-group col-md-4 col-sm-12 change-form' },
                         this.state.modifyArea && _react2.default.createElement(
                             'form',
                             null,
@@ -972,17 +966,17 @@ var List = function (_React$Component) {
                                 { className: 'input-group' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'col-sm-12 justify-content-center align-self-center' },
+                                    { className: 'col-md-12 col-sm-12 justify-content-center align-self-center' },
                                     _react2.default.createElement(
                                         'label',
-                                        { 'for': 'change-date', className: 'input-group-text col-sm-12' },
-                                        'Date: '
+                                        { 'for': 'change-date', className: 'input-group-text col-md-12 col-sm-12' },
+                                        'Date:'
                                     )
                                 ),
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'col-sm-12' },
-                                    _react2.default.createElement('input', { id: 'change-date', type: 'date', className: 'form-control col-sm-12 mb-3 input-date', value: this.state.modDate })
+                                    { className: 'col-md-12 col-sm-12' },
+                                    _react2.default.createElement('input', { id: 'change-date', type: 'date', className: 'form-control col-md-12 col-sm-12 mb-3 input-date', value: this.state.modDate })
                                 )
                             ),
                             _react2.default.createElement(
@@ -990,17 +984,17 @@ var List = function (_React$Component) {
                                 { className: 'input-group' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'col-sm-12 justify-content-center' },
+                                    { className: ' col-md-12 col-sm-12 justify-content-center' },
                                     _react2.default.createElement(
                                         'label',
-                                        { 'for': 'change-title', className: 'input-group-text col-sm-12' },
-                                        'Title: '
+                                        { 'for': 'change-title', className: 'input-group-text col-md-12 col-sm-12' },
+                                        'Title:'
                                     )
                                 ),
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'col-sm-12' },
-                                    _react2.default.createElement('input', { id: 'change-title', className: 'form-control col-sm-12 mb-3 input-title', value: this.state.modTitle })
+                                    { className: 'col-md-12 col-sm-12' },
+                                    _react2.default.createElement('input', { id: 'change-title', className: 'form-control col-md-12 col-sm-12 mb-3 input-title', value: this.state.modTitle })
                                 )
                             ),
                             _react2.default.createElement(
@@ -1008,24 +1002,24 @@ var List = function (_React$Component) {
                                 { className: 'input-group' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'col-sm-12 justify-content-center' },
+                                    { className: 'col-md-12 col-sm-12 justify-content-center' },
                                     _react2.default.createElement(
                                         'label',
-                                        { 'for': 'change-description', className: 'input-group-text col-sm-12' },
+                                        { 'for': 'change-description', className: 'input-group-text col-md-12 col-sm-12' },
                                         'Details: '
                                     )
                                 ),
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'col-sm-12' },
-                                    _react2.default.createElement('textarea', { id: 'change-description', className: 'form-control col-sm-12 mb-3 input-descr', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription })
+                                    { className: 'col-md-12 col-sm-12' },
+                                    _react2.default.createElement('textarea', { id: 'change-description', className: 'form-control col-md-12 col-sm-12 mb-3 input-descr', 'aria-label': 'With textarea', maxLength: '160', cols: '100', rows: '2', value: this.state.newDescription })
                                 ),
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'col-sm-12' },
+                                    { className: 'col-md-12 col-sm-12' },
                                     _react2.default.createElement(
                                         'button',
-                                        { className: 'btn-modify btn-outline-secondary col-sm-12', type: 'button', onClick: function onClick(e) {
+                                        { className: 'btn-modify btn-outline-secondary col-md-12 col-sm-12', type: 'button', onClick: function onClick(e) {
                                                 return _this5.handleClickMod(e);
                                             } },
                                         'Modify'
@@ -1036,7 +1030,7 @@ var List = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'col-sm-4 completed-tasks justify-content-center text-center' },
+                        { className: 'col-md-4 col-sm-12 completed-tasks justify-content-center text-center' },
                         _react2.default.createElement(
                             'h4',
                             null,
@@ -1049,7 +1043,63 @@ var List = function (_React$Component) {
                         )
                     )
                 )
-            );
+            )
+            // <div className = "container">
+            //     <header className = "row">
+            //         <div className = "headline col-sm-12">
+            //             <div>
+            //                 <h1 className = "text-center">TO DO LIST</h1>
+            //             </div>
+            //         </div>
+            //     </header>
+            //     <AddItem post = {this.postItem}/>
+            //     <div className = "row lists">
+            //         <div className = "col-sm-4 to-do-list justify-content-center text-center">
+            //             <h4>New tasks</h4>
+            //             <div>
+            //                 {list}
+            //             </div>
+            //         </div>
+            //         <div className = "input-group col-sm-4 change-form">{this.state.modifyArea &&
+            //             <form>
+            //                 <div className = "input-group">
+            //                     <div className = "col-sm-12 justify-content-center align-self-center">
+            //                         <label for = "change-date" className = "input-group-text col-sm-12">Date: </label>
+            //                     </div>
+            //                     <div className = "col-sm-12">
+            //                         <input id = "change-date" type = "date" className = "form-control col-sm-12 mb-3 input-date" value = {this.state.modDate}></input>
+            //                     </div>
+            //                 </div>
+            //                 <div className = "input-group">
+            //                     <div className = "col-sm-12 justify-content-center">
+            //                         <label for = "change-title" className = "input-group-text col-sm-12">Title: </label>
+            //                     </div>
+            //                     <div className = "col-sm-12">
+            //                         <input id = "change-title" className = "form-control col-sm-12 mb-3 input-title" value = {this.state.modTitle}></input>
+            //                     </div>
+            //                 </div>
+            //                 <div className = "input-group">
+            //                     <div className = "col-sm-12 justify-content-center">
+            //                         <label for = "change-description" className = "input-group-text col-sm-12">Details: </label>
+            //                     </div>
+            //                     <div className = "col-sm-12">
+            //                         <textarea id = "change-description" className = "form-control col-sm-12 mb-3 input-descr" aria-label = "With textarea" maxLength = "160" cols = "100" rows = "2" value = {this.state.newDescription}></textarea>
+            //                     </div>
+            //                     <div className = "col-sm-12">
+            //                         <button className = "btn-modify btn-outline-secondary col-sm-12" type = "button" onClick = {e => this.handleClickMod(e)}>Modify</button>
+            //                     </div>
+            //                 </div>
+            //             </form>}
+            //         </div>
+            //         <div className = "col-sm-4 completed-tasks justify-content-center text-center">
+            //             <h4>Completed tasks</h4>
+            //             <div>
+            //                 {list2}
+            //             </div>
+            //         </div>
+            //     </div>
+            // </div>
+            ;
         }
     }]);
 
@@ -1140,7 +1190,7 @@ var ListItem = function (_React$Component) {
 
             return _react2.default.createElement(
                 "div",
-                { key: this.props.item.id, id: this.props.item.id, className: "list-element single-element " },
+                { key: this.props.item.id, id: this.props.item.id, className: "list-element single-element" },
                 _react2.default.createElement(
                     "div",
                     { onClick: this.handleClickTitle, style: { fontWeight: this.props.currentModify === this.props.item.id ? 'bold' : 'normal' } },

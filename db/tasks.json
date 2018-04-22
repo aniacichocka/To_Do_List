@@ -1,21 +1,51 @@
 {
   "tasks": [
     {
-      "date": "04/04/2018",
+      "date": "2018-04-22",
+      "title": "zrobić zakupy",
+      "description": "mleko, owoce",
+      "id": 1
+    },
+    {
+      "date": "2018-04-23",
+      "title": "przegląd auta",
+      "description": "wymiana oleju",
+      "id": 2
+    },
+    {
+      "date": "2018-04-23",
       "title": "ogarnąć majówkę",
       "description": "zarezerwować bilety",
+      "id": 3
+    },
+    {
+      "date": "2018-04-24",
+      "title": "laptop do serwisu",
+      "description": "koniecznie!!!",
+      "id": 4
+    },
+    {
+      "date": "2018-04-25",
+      "title": "kino",
+      "description": "kupić bilety",
+      "id": 5
+    },
+    {
+      "date": "2018-04-26",
+      "title": "kupić prezent",
+      "description": "komunia Justyny",
       "id": 6
     },
     {
-      "date": "",
-      "title": "przegląd samochodu",
-      "description": "zapytać o wymianę oleju",
+      "date": "2018-04-27",
+      "title": "pojechać z kotem do wteterynarza",
+      "description": "zabrać jego książeczkę zdrowia",
       "id": 7
     },
     {
-      "date": "2018-04-12",
-      "title": "zakupy",
-      "description": "samochód",
+      "date": "2018-04-28",
+      "title": "wiosenne porządki",
+      "description": "przegląd szafy",
       "id": 8
     }
   ]

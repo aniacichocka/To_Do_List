@@ -41,7 +41,7 @@ class ListItem extends React.Component {
 
     render() {
         return (
-            <div key = {this.props.item.id} id = {this.props.item.id} className = "list-element single-element ">
+            <div key = {this.props.item.id} id = {this.props.item.id} className = "list-element single-element">
                 <div onClick = {this.handleClickTitle} style = {{fontWeight: this.props.currentModify === this.props.item.id ? 'bold' : 'normal'}}>
                     <span>{this.props.item.date}: </span>
                     <span> {this.props.item.title}</span>
