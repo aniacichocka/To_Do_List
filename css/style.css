@@ -94,11 +94,12 @@
     font-style: normal;
 }
 
-
 body {
     font-family: "Muli", sans-serif;
     font-weight: normal;
     color: #424147;
+    background-color: #2d3548;
+    /* background-color: #3b4c56; */
 }
 
 .headline {
@@ -106,6 +107,7 @@ body {
     border: 2px solid #a29fa6;
     margin-top: 2rem;
     margin-bottom: 6rem;
+    background-color: white;
 }
 
 h1 {
@@ -138,12 +140,9 @@ h4 {
 
 .to-do-list,
 .completed-tasks {
-    border: 2px solid #a29fa6;
+    border: 4px solid #a29fa6;
     margin-bottom: 2rem;
-}
-
-.change-form {
-    margin-bottom: 2rem;
+    background-color: white;
 }
 
 .list-element {
@@ -161,8 +160,12 @@ h4 {
     font-weight: normal;
 }
 
-.input-group,
-.input-group-prepend {
+.change-form {
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+.input-group {
     padding: 0;
 }
 

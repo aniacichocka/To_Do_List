@@ -16,7 +16,6 @@ class List extends React.Component {
         this.postItem = this.postItem.bind(this);
         this.deleteItem = this.deleteItem.bind(this);
         this.modifyItem = this.modifyItem.bind(this);
-
     }
 
     componentDidMount() {
@@ -24,11 +23,12 @@ class List extends React.Component {
     }
 
     getData() {
+
         fetch('http://localhost:3000/tasks').then(resp => {
             if (resp.ok) {
                 return resp.json();
             } else {
-                throw new Error('Błąd sieci!');
+                throw new Error("Błąd sieci!");
             }
         })
         .then(data => {
@@ -38,7 +38,7 @@ class List extends React.Component {
             })
         })
         .catch(err => {
-            console.log('Błąd!', err);
+            console.log("Błąd!", err);
         });
     }
 
@@ -50,29 +50,28 @@ class List extends React.Component {
             description: description
         }
 
-            fetch('http://localhost:3000/tasks/', {
-                method: "POST",
-                body: JSON.stringify(newItem),
-                headers: new Headers({
-                    "Content-Type": "application/json"
-                })
+        fetch('http://localhost:3000/tasks/', {
+            method: "POST",
+            body: JSON.stringify(newItem),
+            headers: new Headers({
+                "Content-Type": "application/json"
             })
-            .then(resp => {
-                console.log(resp);
-                return resp.json();
+        })
+        .then(resp => {
+            console.log(resp);
+            return resp.json();
+        })
+        .then(data=> {
+            let newData = this.state.mainData;
+            newItem.id = data.id;
+            newData.push(newItem);
+            this.setState({
+                mainData: newData
             })
-            .then(data=> {
-                let newData = this.state.mainData;
-                newItem.id = data.id;
-                newData.push(newItem);
-                this.setState({
-                    mainData: newData
-                })
-            })
-            .catch(err => {
-                console.log("Błąd!", err);
-            });
-
+        })
+        .catch(err => {
+            console.log("Błąd!", err);
+        });
     }
 
     deleteItem (item) {
@@ -117,7 +116,7 @@ class List extends React.Component {
         const elementsTasks = document.querySelectorAll(".single-element");
         let elId;
 
-        elId = this.state.currentModify
+        elId = this.state.currentModify;
 
         const changeItem = {
             date: inputDate,
@@ -212,7 +211,7 @@ class List extends React.Component {
                     <div className = "input-group col-md-4 col-sm-12 change-form">{this.state.modifyArea &&
                         <form>
                             <div className = "input-group">
-                                <div className = "col-md-12 col-sm-12 justify-content-center align-self-center">
+                                <div className = "col-md-12 col-sm-12 justify-content-center">
                                     <label for = "change-date" className = "input-group-text col-md-12 col-sm-12">Date:</label>
                                 </div>
                                 <div className = "col-md-12 col-sm-12">

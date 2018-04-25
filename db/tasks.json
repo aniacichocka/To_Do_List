@@ -1,15 +1,9 @@
 {
   "tasks": [
     {
-      "date": "2018-04-22",
-      "title": "zrobić zakupy",
-      "description": "mleko, owoce",
-      "id": 1
-    },
-    {
       "date": "2018-04-23",
       "title": "przegląd auta",
-      "description": "wymiana oleju",
+      "description": "cokolwik",
       "id": 2
     },
     {
@@ -47,6 +41,18 @@
       "title": "wiosenne porządki",
       "description": "przegląd szafy",
       "id": 8
+    },
+    {
+      "date": "2018-04-30",
+      "title": "rower do serwisu",
+      "description": "serwis czynny do 18.00",
+      "id": 9
+    },
+    {
+      "date": "2018-04-25",
+      "title": "zakupy",
+      "description": "owoce, warzywa",
+      "id": 10
     }
   ]
 }

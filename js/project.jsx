@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { List } from './list.jsx';
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
 
     class App extends React.Component {
         render() {
@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     ReactDOM.render(
         <App />,
-        document.getElementById('app')
+        document.getElementById("app")
     );
 });
