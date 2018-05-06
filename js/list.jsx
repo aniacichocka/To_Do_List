@@ -247,61 +247,6 @@ class List extends React.Component {
                     </div>
                 </div>
             </div>
-            // <div className = "container">
-            //     <header className = "row">
-            //         <div className = "headline col-sm-12">
-            //             <div>
-            //                 <h1 className = "text-center">TO DO LIST</h1>
-            //             </div>
-            //         </div>
-            //     </header>
-            //     <AddItem post = {this.postItem}/>
-            //     <div className = "row lists">
-            //         <div className = "col-sm-4 to-do-list justify-content-center text-center">
-            //             <h4>New tasks</h4>
-            //             <div>
-            //                 {list}
-            //             </div>
-            //         </div>
-            //         <div className = "input-group col-sm-4 change-form">{this.state.modifyArea &&
-            //             <form>
-            //                 <div className = "input-group">
-            //                     <div className = "col-sm-12 justify-content-center align-self-center">
-            //                         <label for = "change-date" className = "input-group-text col-sm-12">Date: </label>
-            //                     </div>
-            //                     <div className = "col-sm-12">
-            //                         <input id = "change-date" type = "date" className = "form-control col-sm-12 mb-3 input-date" value = {this.state.modDate}></input>
-            //                     </div>
-            //                 </div>
-            //                 <div className = "input-group">
-            //                     <div className = "col-sm-12 justify-content-center">
-            //                         <label for = "change-title" className = "input-group-text col-sm-12">Title: </label>
-            //                     </div>
-            //                     <div className = "col-sm-12">
-            //                         <input id = "change-title" className = "form-control col-sm-12 mb-3 input-title" value = {this.state.modTitle}></input>
-            //                     </div>
-            //                 </div>
-            //                 <div className = "input-group">
-            //                     <div className = "col-sm-12 justify-content-center">
-            //                         <label for = "change-description" className = "input-group-text col-sm-12">Details: </label>
-            //                     </div>
-            //                     <div className = "col-sm-12">
-            //                         <textarea id = "change-description" className = "form-control col-sm-12 mb-3 input-descr" aria-label = "With textarea" maxLength = "160" cols = "100" rows = "2" value = {this.state.newDescription}></textarea>
-            //                     </div>
-            //                     <div className = "col-sm-12">
-            //                         <button className = "btn-modify btn-outline-secondary col-sm-12" type = "button" onClick = {e => this.handleClickMod(e)}>Modify</button>
-            //                     </div>
-            //                 </div>
-            //             </form>}
-            //         </div>
-            //         <div className = "col-sm-4 completed-tasks justify-content-center text-center">
-            //             <h4>Completed tasks</h4>
-            //             <div>
-            //                 {list2}
-            //             </div>
-            //         </div>
-            //     </div>
-            // </div>
         )
     }
 }

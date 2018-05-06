@@ -3,7 +3,7 @@
     {
       "date": "2018-04-23",
       "title": "przegląd auta",
-      "description": "cokolwik",
+      "description": "wymiana opon",
       "id": 2
     },
     {
@@ -37,12 +37,6 @@
       "id": 7
     },
     {
-      "date": "2018-04-28",
-      "title": "wiosenne porządki",
-      "description": "przegląd szafy",
-      "id": 8
-    },
-    {
       "date": "2018-04-30",
       "title": "rower do serwisu",
       "description": "serwis czynny do 18.00",
@@ -53,6 +47,12 @@
       "title": "zakupy",
       "description": "owoce, warzywa",
       "id": 10
+    },
+    {
+      "date": "2018-05-23",
+      "title": "wyjazd nad morze",
+      "description": "zarezerwować nocleg",
+      "id": 11
     }
   ]
 }
